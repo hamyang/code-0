@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 定位（position）
+            - 是一种更加高级的定位手段
+            - 通过定位可以将元素摆放到页面的任意位置
+            - 使用position属性来设置定位
+                    可选值：atatic 默认值 是禁止的没有开启定位
+                            relative 开启元素的相对定位
+                            absolute 开启元素的绝定位
+                            fixed 开启元素的固定定位
+                            sticky 开启元素的粘带定位
+                        -相对定位：
+                            -偏移量（offset）
+                            top 定位元素和定位位置上边的位置
+                            bottom 定位元素和定位位置下边的距离
+                            left 定位元素和定位位置的左侧距离
+                            right 定位元素和定位位置的右侧距离
+                        -绝对定位：
+                            绝对定位元素是相对于包含块进行定位的
+                            包含块就是离它最近开启了定位的元素，否则为根元素
+                        -固定定位：特点 不会随网页的滚动条滚动    
+                        -粘滞定位：特点 当元素到达某个位置时将其固定 位置top            
+                        -元素层级：z-index：n  祖先元素不会盖住后代元素
+    -->
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            position: relative;
+            left: 200px;
+            top: -200px;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

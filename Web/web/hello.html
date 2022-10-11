@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签</title>
+    <script type="text/javascript">
+        alert(i == j);// 会自动类型转换
+        // 警告框
+        // alert("hello javascript")
+        // typeof()是javaScript提供的一个函数，返回类型
+        var i = 12;
+        alert(typeof (i));
+        var j = "12"
+        alert(typeof (i * j));
+        alert(i === j);// 除了比较数值还要比较数据类型
+        //0,null,undefined,""(空串) 都认为是false
+        var a = null;
+        if (a) {
+            alert("null为真");
+        } else {
+            alert("null为假");
+        }
+        // &&运算 全为真返回最后一个表达式，有一个为假返回第一个假的值
+        var a = "abc";
+        var b = "false";
+        var c = "null";
+        alert(a && b);
+        alert(a && b && c);
+        // ||运算表达式全为假，返回最后一个表达式值，有一个表达式为真，返回第一个为真的表达式的值
+        alert(b || c);
+        alert(a || b);
+        // javascript语言中数组，只要通过数组下标赋值，那么最大下标值，会自动扩容
+        var arr = [];
+        arr[2] = "abc";
+        for (var i = 0; i < arr.length; i++) {
+            alert(arr[i]);
+        }
+
+        // 定义函数用 function
+        function fun(a, b) {
+            var result = a + b;
+            alert(result);
+        }
+
+        fun(100, 50);
+
+        // 带返回值
+        function fun2(a, b) {
+            return a + b;
+        }
+
+        alert(fun2(30, 40));
+        // 第二种函数定义方式
+        var fun3 = function (a, b) {
+            alert(a + b);
+        }
+        fun3(20, 30);
+        var fun4 = function (num1, num2) {
+            return num1 + num2
+        }
+        alert(fun4(40, 50));
+        // js 不允许方法重载，重载会覆盖上一次
+        // 隐式函数
+        function sun5(num1, num2) {
+            var result = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                result += arguments[i];
+            }
+            return result;
+        }
+
+        alert(sun5(1, 2, 3, 4, 5, 6));
+        // 对象的自定义
+        var obj = new Object();
+        obj.name = "黄洋";
+        obj.age = 19;
+        obj.fun = function () {
+            alert("姓名：" + this.name + "年龄：" + this.age);
+        }
+        obj.fun();
+        // 自定义对象{}
+        var obj = {
+            name: "黄洋",
+            age: 19,
+            fun: function () {
+                alert("姓名：" + this.name + "年龄：" + this.age)
+            }
+        };
+        Object.fun();
+
+    </script>
+</head>
+<body>
+内容
+</body>
+</html>

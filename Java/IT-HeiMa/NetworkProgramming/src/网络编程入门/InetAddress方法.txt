@@ -1,0 +1,25 @@
+boolean equals(Object obj) 将此对象与指定对象进行比较。
+byte[] getAddress() 返回此 InetAddress对象的原始IP地址。
+static InetAddress[] getAllByName(String host) 给定主机的名称，根据系统上配置的名称服务返回其IP地址数组。
+static InetAddress getByAddress(byte[] addr) 给出原始IP地址的 InetAddress对象。
+static InetAddress getByAddress(String host, byte[] addr) 根据提供的主机名和IP地址创建InetAddress。
+static InetAddress getByName(String host) 确定主机名称的IP地址。
+String getCanonicalHostName() 获取此IP地址的完全限定域名。
+String getHostAddress() 返回文本显示中的IP地址字符串。
+String getHostName() 获取此IP地址的主机名。
+static InetAddress getLocalHost() 返回本地主机的地址。
+static InetAddress getLoopbackAddress() 返回回送地址。
+int hashCode() 返回此IP地址的哈希码。
+boolean isAnyLocalAddress() 检查通配符地址中的InetAddress的实用程序。
+boolean isLinkLocalAddress() 检查InetAddress是否是链接本地地址的实用程序。
+boolean isLoopbackAddress() 检查InetAddress是否是一个环回地址的实用程序。
+boolean isMCGlobal() 检查多播地址是否具有全局范围的实用程序。
+boolean isMCLinkLocal() 检查组播地址是否具有链路范围的实用程序。
+boolean isMCNodeLocal() 检查多播地址是否具有节点范围的实用程序。
+boolean isMCOrgLocal() 检查组播地址是否具有组织范围的实用程序。
+boolean isMCSiteLocal() 检查多播地址是否具有站点范围的实用程序。
+boolean isMulticastAddress() 检查InetAddress是否是IP组播地址的实用程序。
+boolean isReachable(int timeout) 测试该地址是否可达。
+boolean isReachable(NetworkInterface netif, int ttl, int timeout) 测试该地址是否可达。
+boolean isSiteLocalAddress() 检查InetAddress是否是站点本地地址的实用程序。
+String toString() 将此IP地址转换为 String

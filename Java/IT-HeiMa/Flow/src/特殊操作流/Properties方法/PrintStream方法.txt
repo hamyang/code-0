@@ -1,0 +1,33 @@
+PrintStream append(char c) 将指定的字符附加到此输出流。
+PrintStream append(CharSequence csq) 将指定的字符序列附加到此输出流。
+PrintStream append(CharSequence csq, int start, int end) 将指定字符序列的子序列附加到此输出流。
+boolean checkError() 刷新流并检查其错误状态。
+protected void clearError() 清除此流的内部错误状态。
+void close() 关闭流。
+void flush() 刷新流。
+PrintStream format(Locale l, String format, Object... args) 使用指定的格式字符串和参数将格式化的字符串写入此输出流。
+PrintStream format(String format, Object... args) 使用指定的格式字符串和参数将格式化的字符串写入此输出流。
+void print(boolean b) 打印布尔值。
+void print(char c) 打印一个字符
+void print(char[] s) 打印字符数组。
+void print(double d) 打印双精度浮点数。
+void print(float f) 打印浮点数。
+void print(int i) 打印一个整数。
+void print(long l) 打印一个长整数。
+void print(Object obj) 打印一个对象。
+void print(String s) 打印字符串。
+PrintStream printf(Locale l, String format, Object... args) 使用指定的格式字符串和参数将格式化的字符串写入此输出流的便利方法。
+PrintStream printf(String format, Object... args) 使用指定的格式字符串和参数将格式化的字符串写入此输出流的便利方法。
+void println() 通过写入行分隔符字符串来终止当前行。
+void println(boolean x) 打印一个布尔值，然后终止该行。
+void println(char x) 打印一个字符，然后终止该行。
+void println(char[] x) 打印一个字符数组，然后终止该行。
+void println(double x) 打印一次，然后终止行。
+void println(float x) 打印一个浮点数，然后终止该行。
+void println(int x) 打印一个整数，然后终止行。
+void println(long x) 打印很长时间，然后终止行。
+void println(Object x) 打印一个对象，然后终止该行。
+void println(String x) 打印一个字符串，然后终止行。
+protected void setError() 将流的错误状态设置为 true 。
+void write(byte[] buf, int off, int len) 从指定的字节数组写入 len个字节，从偏移 off开始到此流。
+void write(int b) 将指定的字节写入此流。

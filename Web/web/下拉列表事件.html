@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // onchange 内容发生改变事件    常用于下拉列表和输入内容发生改变后操作
+        function onchangeFun() {
+            alert("女神出现")
+        }
+        window.onload = function () {
+            var btnObj = document.getElementById("sel01");
+            btnObj.onchange = function () {
+                alert("男神出现")
+            }
+        }
+
+    </script>
+</head>
+<body>
+<!--静态注册-->
+请选择女神
+<select onchange="onchangeFun()">
+    <option>--女神--</option>
+    <option>佳佳</option>
+    <option>美美</option>
+    <option>丽丽</option>
+</select>
+<!--动态注册-->
+请选择男神
+<select id="sel01">
+    <option>--男神--</option>
+    <option>帅帅</option>
+    <option>乐乐</option>
+    <option>威威</option>
+</select>
+</body>
+</html>

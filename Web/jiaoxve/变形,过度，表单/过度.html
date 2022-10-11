@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .xxaq1{
+            background-color: rgb(71,81,217);
+            position: absolute;
+            width: 200px;
+            height: 280px;
+            top: 100px;
+            left: 100px;
+            /*transition 过度           transform 变换*/
+            transition:background 2s , transform 6s;
+            /*transition-duration 过度时间*/
+            transition-duration: 5s;
+            /*花费时间 */
+            transition-delay: 1s;
+        }
+        /*hover 鼠标移入状态*/
+        .xxaq1:hover{
+            width: 300px;
+            height: 400px;
+            /*transform 变形 rotate旋转 */
+            transform: rotate(30deg);
+
+            background: rgb(57,191,31);
+        }
+        @keyframes ys {
+            from{
+                background-color: rgb(98,160,55);
+            }
+            50%{
+                background-color: rgb(195,107,210);
+            }
+            to{
+                background-color: rgb(49,114,193);
+            }
+        }
+        @keyframes yd {
+            from{
+                transform: scale(0.8);
+            }
+            50%{
+                transform: translate(200px,200px);
+            }
+            to{
+                transform: skew(30deg,20deg);
+            }
+        }
+        .xxaq2{
+            background-color: rgb(117,156,203);
+            position: absolute;
+            width: 200px;
+            height: 280px;
+            top: 100px;
+            left: 800px;
+            /*animation-name 动画名称*/
+            animation-name: ys,yd;
+            /*animation-duration 动画持续时间*/
+            animation-duration: 6s,5s;
+            /* animation-iteration-count 动画重复次数 infinite 无穷*/
+            animation-iteration-count: infinite;
+            /*animation-direction: alternate;*/
+            /*animation-fill-mode 动画填充模式 */
+            animation-fill-mode: forwards;
+        }
+        /*hover 鼠标移入状态*/
+        .xxaq2:hover{
+            /*animation-play-state 指定动画属性  paused暂停*/
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+<div class="xxaq1"></div>
+<div class="xxaq2"></div>
+</body>
+</html>

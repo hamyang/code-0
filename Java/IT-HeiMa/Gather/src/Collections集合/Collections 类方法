@@ -1,0 +1,14 @@
+1.static void swap(List list, int i, int j) :将指定列表中的两个索引进行位置互换
+
+2.static void  sort(List<T> list) :按照列表中元素的自然顺序进行排序
+
+3.static void shuffle(List list):随机置换，对 List 集合元素进行随机排序（shuffle 方法模拟了“洗牌”动作）。
+
+4.static void reverse(List list)  :对指定 List 集合元素进行逆向排序
+
+5.static void fill(List list, Object obj) :使用指定的对象填充指定列表的所有元素
+
+6.static void copy(List dest, List src) :是把源列表中的数据覆盖到目标列表
+
+7.static int  binarySearch(List list, Object key) 使用二分查找法查找指定元素在指定列表的索引
+

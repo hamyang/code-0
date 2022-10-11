@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // const patt = /[a~z]/;
+        // \w表示是否包含字母，数字，下划线
+        // a+表示字符串中是否包含至少一个a
+        // a*表示字符串中是否包含零个或多个a
+        // a？表示字符串是否包含0个或一个a
+        // a{3}表示字符串是否包含连续3个a
+        // a{3,5}表示字符串是否包含至少3个，最多5个连续的a
+        // a{3,}表示字符串是否包含至少3个连续的a
+        // a$表示要求字符串必须以a结尾
+        // ^a表示要求字符串必须以a开头
+        // ^a{3,5}$要求字符串从头到尾必须完全匹配
+        const patt = /^a{3,5}$/
+        var str = "aaaaaaa";
+        alert(patt.test(str));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+DatagramSocket() 构造数据报套接字并将其绑定到本地主机上的任何可用端口。
+protected  DatagramSocket(DatagramSocketImpl impl) 使用指定的DatagramSocketImpl创建一个未绑定的数据报套接字。
+DatagramSocket(int port) 构造数据报套接字并将其绑定到本地主机上的指定端口。
+DatagramSocket(int port, InetAddress laddr) 创建一个数据报套接字，绑定到指定的本地地址。
+DatagramSocket(SocketAddress bindaddr) 创建一个数据报套接字，绑定到指定的本地套接字地址。
+
+所有方法
+void bind(SocketAddress addr) 将此DatagramSocket绑定到特定的地址和端口。
+void close() 关闭此数据报套接字。
+void connect(InetAddress address, int port) 将套接字连接到此套接字的远程地址。
+void connect(SocketAddress addr) 将此套接字连接到远程套接字地址（IP地址+端口号）。
+void disconnect() 断开插座。
+boolean getBroadcast() 测试是否启用了SO_BROADCAST。
+DatagramChannel getChannel() 返回与该数据报套接字相关联的唯一的DatagramChannel对象（如果有）。
+InetAddress getInetAddress() 返回此套接字连接到的地址。
+InetAddress getLocalAddress() 获取套接字所绑定的本地地址。
+int getLocalPort() 返回此套接字绑定到的本地主机上的端口号。
+SocketAddress getLocalSocketAddress() 返回此套接字绑定到的端点的地址。
+int getPort() 返回此套接字连接到的端口号。
+int getReceiveBufferSize() 获取此 DatagramSocket的SO_RCVBUF选项的值，即平台在此 DatagramSocket上输入的缓冲区大小。
+SocketAddress getRemoteSocketAddress() 返回此套接字连接，或端点的地址 null如果是未连接。
+boolean getReuseAddress() 测试是否启用了SO_REUSEADDR。
+int getSendBufferSize() 获取此 DatagramSocket的SO_SNDBUF选项的值，即该平台用于在此 DatagramSocket上输出的缓冲区大小。
+int getSoTimeout() 检索SO_TIMEOUT的设置。
+int getTrafficClass() 在从该DatagramSocket发送的数据包的IP数据报头中获取流量类或服务类型。
+boolean isBound() 返回套接字的绑定状态。
+boolean isClosed() 返回套接字是否关闭。
+boolean isConnected() 返回套接字的连接状态。
+void receive(DatagramPacket p) 从此套接字接收数据报包。
+void send(DatagramPacket p) 从此套接字发送数据报包。
+void setBroadcast(boolean on) 启用/禁用SO_BROADCAST。
+static void setDatagramSocketImplFactory(DatagramSocketImplFactory fac) 设置应用程序的数据报套接字实现工厂。
+void setReceiveBufferSize(int size) 设置SO_RCVBUF选项设置为这个指定的值 DatagramSocket 。
+void setReuseAddress(boolean on) 启用/禁用SO_REUSEADDR套接字选项。
+void setSendBufferSize(int size) 设置SO_SNDBUF选项设置为这个指定的值 DatagramSocket 。
+void setSoTimeout(int timeout) 以指定的超时（以毫秒为单位）启用/禁用SO_TIMEOUT。
+void setTrafficClass(int tc) 在从该DatagramSocket发送的数据报的IP数据报头中设置流量类别或服务类型的八位字节。

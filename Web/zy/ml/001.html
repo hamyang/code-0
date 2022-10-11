@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>管理员管理菜品信息</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edg">
+    <meta name="viewport" content="device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <script charset="UTF-8" src="../../bootstrap-5.2.1-dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+<div class="container-fluid"><div class="row"><div class="col-md-12 col-12">
+    <nav
+            class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+        <a class="navbar-brand" href="homepage.html"><span
+                class="text-info">网络点餐系统</span></a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item"><a class="nav-link" href="#"
+                                    data-toggle="modal" data-target="#loginModal">登录</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"
+                                    data-toggle="modal" data-target="#registerModal">注册</a></li>
+        </ul>
+    </nav>
+</div></div></div>
+<div class="container-fluid"><div class="row">
+    <div class="col-md-4 col-12">
+        <h4 class="list-group-item active">热点菜品</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><img class="img-rounded"
+                                             src="images/jiachang/01.jpg" />
+                <a href="#"	 target="_blank"> 菠菜炒鸡蛋</a>
+                &nbsp;&nbsp; <span>9元</span></li>
+            <li class="list-group-item"><img class="img-rounded"
+                                             src="images/jiachang/02.jpg" />
+                <a href="#"	 target="_blank"> 韭菜炒鸡蛋</a>
+                &nbsp;&nbsp; <span>8元</span></li>
+            <li class="list-group-item"><img class="img-rounded"
+                                             src="images/liangcai/1.jpg" />
+                <a href="#"	 target="_blank">小葱拌豆腐</a>
+                &nbsp;&nbsp; <span>22元</span></li>
+        </ul>
+    </div>
+    <div class="col-md-4 col-12">
+        <h4 class="list-group-item active">今日特价</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><img class="img-rounded"
+                                             src="images/liangcai/1.jpg" />
+                <a href="#" target="_blank"> 小葱拌豆腐</a>
+                &nbsp;&nbsp; <span>18元</span></li>
+            <li class="list-group-item"><img class="img-rounded"
+                                             src="images/liangcai/10.jpg" />
+                <a href="#" target="_blank"> 蒜泥白肉</a>
+                &nbsp;&nbsp; <span>15元</span>
+            </li>
+            <li class="list-group-item"><img class="img-rounded"
+                                             src="images/zhushi/10.jpg" />
+                <a href="#" target="_blank"> 驴打滚</a>
+                &nbsp;&nbsp; <span>10元</span>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-4 col-12">
+        <h4 class="list-group-item active">厨师推荐</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><img class="img-rounded"
+                                             src="images/jiachang/01.jpg" />
+                <a href="#" target="_blank"> 菠菜炒鸡蛋</a>
+                &nbsp;&nbsp; <span>9元</span></li>
+            <li class="list-group-item"><img class="img-rounded"
+                                             src="images/jiachang/05.jpg" />
+                <a href="#" target="_blank">  韩国泡菜汤</a>
+                &nbsp;&nbsp; <span>16元</span></li>
+            <li class="list-group-item"><img class="img-rounded"
+                                             src="images/liangcai/5.jpg" />
+                <a href="#" target="_blank">  老醋花生米</a>
+                &nbsp;&nbsp; <span>14元</span></li>
+        </ul>
+    </div>
+</div></div>
+
+<!-- 登录模态框 -->
+<div class="modal" id="loginModal" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-info">用户登录</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="post" action="#">
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">用户名</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="un" type="text" required />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">密码</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="pw" type="password" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">关闭</button>
+                    <button type="submit" class="btn btn-primary">确定</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 注册模态框 -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-info">用户注册</h5>
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="post" action="#">
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">用户名</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" id="username" name="un" type="text" required />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">密码</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="pw" type="password" required />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">电话</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="tel" type="number" required />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">地址</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" name="addr" type="text" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">关闭</button>
+                    <button type="submit" class="btn btn-primary" id="regButton">确定</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

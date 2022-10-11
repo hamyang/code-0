@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+        body{
+            border: 1px red solid;
+            background-color: aliceblue;
+        }
+        .box1{
+            width:200px;
+            height: 200px;
+            background-color: aquamarine;
+            margin: 200px auto;
+            transition: 2s;
+        }
+        body:hover .box1{
+
+            /* 通过旋转可以使元素沿着XYZ轴旋转指定角度
+                    rotateX()  rotateY()  rotateZ() */
+            transform:rotateZ(180deg);
+            transform:rotateZ(.25turn);
+            transform:translateZ(400px) rotateY(180deg);
+            transform:rotateY(180deg) translateZ(400px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

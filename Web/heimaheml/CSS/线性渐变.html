@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .class{
+            width: 200px;
+            height: 200px;
+    /* background-image:线性渐变，可以实现一个颜色向其他颜色过度的效果，渐变是图片
+                 可选值 linear-gradient()
+                 渐变可以同时指定多个颜色，多个颜色默认情况下平均分布
+                 指定渐变方向:to top 
+                             to bottom
+                             to left 
+                             to right
+                             
+                             deg deg表示度数
+                             turn turn表示圈数
+                             repeating-linear-gradient()可以平铺线性渐变             
+    */
+    background-image:linear-gradient(red,orange);
+    background-image:linear-gradient(35deg, red,orange);
+    background-image:linear-gradient(1.5turn, red,orange);
+        }
+    </style>
+</head>
+<body>
+    <div class="class"></div>
+</body>
+</html>

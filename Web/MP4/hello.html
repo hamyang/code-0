@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+<canvas id="myCanvas" width="400" height="200" style="border:1px solid #d3d3d3;">
+  您的浏览器不支持 HTML5 canvas 标签。
+</canvas>
+<script>
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  //在Y = 100画一条红线
+  ctx.strokeStyle="red";
+  ctx.moveTo(5,100);
+  ctx.lineTo(395,100);
+  ctx.stroke();
+  ctx.font="20px Arial"
+  //每个在y = 100的单词有不同的textbaseline值
+  ctx.textBaseline="top";
+  ctx.fillText("Top",5,100);
+  ctx.textBaseline="bottom";
+  ctx.fillText("Bottom",50,100);
+  ctx.textBaseline="middle";
+  ctx.fillText("Middle",120,100);
+  ctx.textBaseline="alphabetic";
+  ctx.fillText("Alphabetic",190,100);
+  ctx.textBaseline="hanging";
+  ctx.fillText("Hanging",290,100);
+</script>
+
+</body>
+</html>

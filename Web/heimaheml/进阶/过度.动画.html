@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 800px;
+            height: 800px;
+            background-color: antiquewhite;
+            overflow: hidden;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+            margin-left: 0;
+        }
+        .box2{
+            background-color: aqua;
+            /* 调用关键帧 */
+            animation-name: test;
+            animation-duration: 2s;
+            /* 动画的延时 */
+            animation-delay: 2s;
+            /* 动画运动效果，参照过度 */
+            animation-timing-function: ease;
+            /* 动画执行次数 infinite 无限执行 */
+            animation-iteration-count: 2;
+            /* 动画运行方向 
+                可选值normal 默认值从from向to运行
+                      reverse     从to向from运行
+                      alternate   从from向to运行 重复执行动画时反向执行
+                      alternate-reverse 从to向from运行 重复执行动画时反向执行
+            */
+            animation-direction: alternate-reverse;
+            /* 设置动画的执行状态
+                        可选值；running 默认值 动画执行
+                                paused 动画暂停
+            */
+             animation-play-state: running;
+            /* 动画的填充模式
+                        可选值：none 默认值 动画执行完毕元素回到原来位置
+                                forwards 动画执行完毕元素会停止在动画结束的位置
+                                backwards 动画延时等待时，元素会处于开始位置
+                                both: 结合了forwards和backwards
+            */
+            animation-fill-mode: both;
+        }
+        /* 动画：可以自动触发动态效果，必须设置关键帧 */
+        @keyframes test {
+            form{
+                margin-left: 0px;
+                background-color: orange;
+            }
+            to{
+                margin-left: 700px;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

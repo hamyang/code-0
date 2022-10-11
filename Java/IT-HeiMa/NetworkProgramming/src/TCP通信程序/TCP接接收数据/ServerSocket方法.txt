@@ -1,0 +1,26 @@
+ServerSocket() 创建未绑定的服务器套接字。
+ServerSocket(int port) 创建绑定到指定端口的服务器套接字。
+ServerSocket(int port, int backlog) 创建服务器套接字并将其绑定到指定的本地端口号，并指定了积压。
+ServerSocket(int port, int backlog, InetAddress bindAddr) 创建一个具有指定端口的服务器，侦听backlog和本地IP地址绑定。
+
+所有方法
+Socket accept() 侦听要连接到此套接字并接受它。
+void bind(SocketAddress endpoint) 将 ServerSocket绑定到特定地址（IP地址和端口号）。
+void bind(SocketAddress endpoint, int backlog) 将 ServerSocket绑定到特定地址（IP地址和端口号）。
+void close() 关闭此套接字。
+ServerSocketChannel getChannel() 返回与此套接字相关联的唯一的ServerSocketChannel对象（如果有）。
+InetAddress getInetAddress() 返回此服务器套接字的本地地址。
+int getLocalPort() 返回此套接字正在侦听的端口号。
+SocketAddress getLocalSocketAddress() 返回此套接字绑定到的端点的地址。
+int getReceiveBufferSize() 获取此 ServerSocket的 SO_RCVBUF选项的值，即将用于从该 ServerSocket接受的套接字的建议缓冲区大小。
+boolean getReuseAddress() 测试是否启用了 SO_REUSEADDR 。
+int getSoTimeout() 检索 SO_TIMEOUT的设置。
+protected void implAccept(Socket s)  ServerSocket的子类使用这个方法来覆盖accept（）来返回自己的套接字子类。
+boolean isBound() 返回ServerSocket的绑定状态。
+boolean isClosed() 返回ServerSocket的关闭状态。
+void setPerformancePreferences(int connectionTime, int latency, int bandwidth) 设置此ServerSocket的性能首选项。
+void setReceiveBufferSize(int size) 设置从 ServerSocket接受的套接字的 SO_RCVBUF选项的默认建议值。
+void setReuseAddress(boolean on) 启用/禁用 SO_REUSEADDR套接字选项。
+static void setSocketFactory(SocketImplFactory fac) 设置应用程序的服务器套接字实现工厂。
+void setSoTimeout(int timeout) 启用/禁用 SO_TIMEOUT带有指定超时，以毫秒为单位。
+String toString() 将该套接字的实现地址和实现端口返回为 String 。

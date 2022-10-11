@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 使用form标签创建一个表单
+         form属性 action表单提交的服务器地址
+         注意：数据提交到服务器中，必须要为元素指定一个name属性
+     -->
+    <form action="target.html">
+        <!-- 
+            autocomplete='off' 关闭自动补全
+            readonly 将表单设置为只读，数据会提交
+            disabled 将表单设置为禁用数据不会提交
+            autofocus 设置表单自动获取焦点
+         -->
+         <input type="text" name="a" value="hello" autocomplete="on">
+         <input type="text" name="a" value="world" readonly>
+         <input type="text" name="b" disabled>
+         <input type="text" name="b" autofocus>
+         <br><br>
+         <input type="submit">
+         <!-- 重置按钮 -->
+         <input type="reset">
+         <!-- 普通按钮 -->
+         <input type="button" value="按钮">
+         <!-- 相比于上面更灵活 -->
+         <button type="submit">提交</button>
+         <button type="reset">重置</button>
+         <button type="button">按钮</button>
+         <br><br>
+        文本框<input type="text" name="c">
+        <br><br>
+        <!-- 密码框 -->
+        密码框<input type="password" name="我是密码">
+        <br><br>
+        <!-- 提交按钮 value设置按钮的字-->
+        <input type="submit" value="注册">
+        <br><br>
+        <!-- 单选框 checked为默认选项-->
+        单选
+        <input type="radio" name="hello" value="a">
+        <input type="radio" name="hello" value="b">
+        <input type="radio" name="hello" value="c" checked>
+        <br><br>
+        <!-- 多选框 -->
+        多选
+        <input type="checkbox" name="text" value="1">
+        <input type="checkbox" name="text" value="2">
+        <input type="checkbox" name="text" value="3" checked>
+        <br><br>
+        <!-- 下拉列表 selected为默认选项-->
+        <select name="哈哈哈">
+            <option value="i">选项一</option>
+            <option value="ii">选项二</option>
+            <option selected value="iii">选项三</option>
+        </select>
+    </form>
+
+</body>
+</html>

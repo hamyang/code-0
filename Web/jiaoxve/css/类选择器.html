@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    |
+    <style>
+        a{
+            text-align: center;
+            width: 200px;
+            height: 30px;
+            padding: 10px;
+            margin: 10px;
+            display: block;
+            /*首行缩进*/
+            text-indent: 2em;
+            /*字体大小*/
+            font-size: 12px;
+            /*行距*/
+            line-height: 21px;
+            /*text-decoration: none;去除链接下划线，一般用来去除a标签默认样式的下划线。*/
+            text-decoration: none;
+        }
+        a:link{
+            color: #00a905;
+            background-image: url("../../img/img03.jpg");
+        }
+        a:visited{
+            font-weight: bold;
+            text-decoration: line-through;
+            background-image: url("../../img/img03.jpg");
+        }
+        a:hover{
+            font-weight: bold;
+            color: #bbffaa;
+            background-image: url("../../img/img03.jpg");
+            letter-spacing: 2px;
+        }
+        a:active{
+            color: #6e7b80;
+            letter-spacing: 3px;
+            text-decoration:underline;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+<a href="#">标签选择器</a>
+<a href="#">类选择器</a>
+<a href="#">id选择器</a>
+<a href="#">群组选择器和后代选择器</a>
+<a href="#">伪类选择器</a>
+</body>
+</html>

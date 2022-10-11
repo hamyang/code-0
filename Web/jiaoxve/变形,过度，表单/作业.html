@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*顶部导航栏*/
+        .head {
+            background-color: #ffc0ff;
+            height: 60px;
+            width: 1535px;
+            text-align: left;
+            margin-right: auto;
+            margin-left: auto;
+            position: absolute;
+        }
+
+        /*按钮位置*/
+        #an {
+            left: 1460px;
+            top: 12px;
+            position: absolute;
+
+        }
+
+        /*为按钮设置背景边框*/
+        input {
+            background-color: #c0c0c0;
+            border: 5px solid #c0c0c0;
+        }
+
+        #hz1 {
+            background-color: #96c0ff;
+            height: 660px;
+            width: 700px;
+            /*left 左*/
+            left: 0px;
+            /*top 顶部*/
+            top: 70px;
+            /*相对定位 相对定位是相对于元素在文档中的初始位置；*/
+            position: absolute;
+        }
+
+        #hz2 {
+            background-color: #ccabcc;
+            height: 660px;
+            width: 310px;
+            left: 750px;
+            top: 70px;
+            /*相对定位 相对定位是相对于元素在文档中的初始位置；*/
+            position: absolute;
+        }
+
+        #hz3 {
+            background-color: #ccabcc;
+            height: 660px;
+            width: 300px;
+            left: 1140px;
+            top: 70px;
+            /*相对定位 相对定位是相对于元素在文档中的初始位置；*/
+            position: absolute;
+        }
+
+        #img1 {
+            position: relative;
+            left: 0px;
+            top: 10px;
+            float: left;
+        }
+        #img2 {
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+        #img3 {
+            position: relative;
+            left: 10px;
+            top: 70px;
+        }
+        #img4 {
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+        #img5 {
+            position: relative;
+            left: 10px;
+            top: 70px;
+        }
+        .a1{
+            /*bottom 底部*/
+            left: 50px;
+            top: 600px;
+            /*绝对定位 绝对定位是相对于元素最近的已定位的祖先元素*/
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<div class="head">
+    <div id="an">
+        <input type="button" value="按钮">
+    </div>
+</div>
+<div id="hz1">
+    <img id="img1" src="../../img/wxl.jpg" >
+    <p>王心凌（Cyndi Wang），1982年9月5日出生于中国台湾省新竹县，祖籍山东省青岛市，华语流行乐女歌手、演员 [84] 。
+        2003年，王心凌发行首张个人专辑《Cyndi Begin》正式出道，并凭借偶像剧《西街少年》崭露头角 [87] 。2004年，发行第二张专辑《爱你》 [88] ，同名主打歌《爱你》走红 [1]
+        ；同年，主演的偶像剧《天国的嫁衣》夺得台湾年度收视冠军 [2] 。2005年，发行第三张专辑《Honey》 [89] ，因甜蜜的歌声及欢快的舞步被誉为“甜蜜教主” [3] ；同年，发行第四张专辑《Cyndi With U》
+        [90] ，主打歌《睫毛弯弯》走红 [4] 。2006年，主演的偶像剧《微笑Pasta》成为台湾年度收视冠军 [5] 。
+        2009年，凭借第七张专辑《心电心》登上G-music年度TOP20 [6] 。2011年，凭借第八张专辑《（黏黏）²》登上G-music年度TOP10 [7]
+        ；同年，凭借偶像剧《爱上查美乐》获得第6届华鼎奖中国偶像励志类题材电视剧最佳女演员 [106] 。2012年，发行第九张专辑《爱不爱》 [8] 。2013年，主演的偶像剧《幸福选择题》取得亮眼收视 [9]
+        。2014年，发行第十张专辑《第10个王心凌》 [10] 。2015年，发行第11张专辑《敢要敢不要》 [11] 。2016年，开启“Cyndi Wants!世界巡回演唱会” [12]
+        。2018年，凭借第12张专辑《CYNDILOVES2SING 爱。心凌》获得华语五大金榜年榜女冠 [94] 。2019年，开启“CYNDI LOVES 2SING
+        爱。心凌巡回演唱会”；同年，获得2019Hito流行音乐奖最受欢迎女歌手 [95] 。2022年，参加综艺节目《乘风破浪第三季》，并夺得年度总冠军
+        王心凌（Cyndi Wang），1982年9月5日出生于中国台湾省新竹县，祖籍山东省青岛市，华语流行乐女歌手、演员。2003年，王心凌发行首张个人专辑《Cyndi Begin》正式出道
+        ，并凭借偶像剧《西街少年》崭露头角。2004年，发行第二张专辑《爱你》，同名主打歌《爱你》走红；同年，主演的偶像剧《天国的嫁衣》夺得台湾年度收视冠军。2005年，发行第三张专辑《Honey》，因甜蜜的歌声及欢快的舞步</p>
+</div>
+<div id="hz2">
+    <img id="img2" src="../../img/wxl2.jpg">
+    <img id="img3" src="../../img/wxl3.jpg">
+    <a class="a1" href="https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2Fn%2F%25E7%258E%258B%25E5%25BF%2583%25E5%2587%258C&domain=.weibo.com&sudaref=https%3A%2F%2Fcn.bing.com%2F&ua=php-sso_sdk_client-0.6.36&_rand=1663948514.7347" target="_blank">跳转到个人微博</a>
+</div>
+<div id="hz3">
+    <img id="img4" src="../../img/wxl5.jpg">
+    <img id="img5" src="../../img/wxl6.jpg">
+    <a class="a1" href="https://baike.baidu.com/item/%E7%8E%8B%E5%BF%83%E5%87%8C/170464"  target="_blank">跳转到个人简绍</a>
+</div>
+</body>
+</html>

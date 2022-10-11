@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 主体族：font-family
+            font-face 可以将服务器中的字体直接提供给用户使用（注意版权问题！）
+                      可选：seriy 衬线字体
+                            sans-serif非衬线字体
+                            monospace 等宽字体等
+                            可以同时指定多个字体以,隔开，优先使用第一个
+
+                            color 设置主体颜色
+                            font-size 主体的大小
+              简写属性：font:字体大小/行高 字体族 行高不写会使用默认值
+                            font:weight 字重 字体加粗
+                       可选：
+                            normal 默认值不加粗
+                            bold 加粗 100~900级别
+                     font-style 字体的风格
+                            normal 正常的
+                            italic 斜体             
+
+        */
+        @font-face {
+            font-family: myfont;
+            src: url('字体路径');
+        }
+        p{
+            line-height: 2;/*行高*/
+            color: aqua;
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+            /* font: 50px / 4px 'Courier New', Courier, monospace; */
+            font:bold italic 50px/2 微软雅黑， 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <p>今天天气真好,hello world</p>
+</body>
+</html>

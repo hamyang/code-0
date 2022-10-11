@@ -1,0 +1,51 @@
+//嵌套
+.box1{
+    background-color: antiquewhite;
+    .box2{
+        background-color: bisque;
+        .box3{
+            background-color: blueviolet;
+            // &表示外层的父元素
+            &:hover{
+                color: #bfa;
+            }
+        }
+    }
+}
+// 语法:@变量名 变量可以存储任意值  发生重名时优先使用较近的元素
+@a:200px;
+@b:#bfa;
+@c:box6;
+.box4{
+    color: @b;
+    width: @a;
+    height: @a;
+}
+// 作为类名需要加{}
+@{c}{
+    width: @a;
+}
+// :extend() 选择器分组，扩展
+.box3:extend(.box1){
+    color: burlywood;
+}
+// 直接将指定的样式进行引用,相对于进行了复制
+.box4{
+    .box3();
+}
+// 使用类选择器时在选择器后添加一个括号，只能在less中调用不会出现在css中
+.box5(){
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+}
+// 混合函数
+.box6(@a:300px,@b:red,@c:400px){
+    color: @b;
+    width: @a;
+    height: @a;
+}
+body:hover{
+    // 设置颜色的深浅度
+    background-color: darken(#bfa,50%);
+}

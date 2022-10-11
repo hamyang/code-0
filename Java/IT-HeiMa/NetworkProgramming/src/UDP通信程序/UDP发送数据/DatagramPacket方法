@@ -1,0 +1,21 @@
+构造方法
+DatagramPacket(byte[] buf, int length) 构造一个 DatagramPacket用于接收长度的数据包 length 。
+DatagramPacket(byte[] buf, int length, InetAddress address, int port) 构造用于发送长度的分组的数据报包 length指定主机上到指定的端口号。
+DatagramPacket(byte[] buf, int offset, int length) 构造一个 DatagramPacket用于接收长度的分组 length ，指定偏移到缓冲器中。
+DatagramPacket(byte[] buf, int offset, int length, InetAddress address, int port) 构造用于发送长度的分组数据报包 length具有偏移 ioffset指定主机上到指定的端口号。
+DatagramPacket(byte[] buf, int offset, int length, SocketAddress address) 构造用于发送长度的分组数据报包 length具有偏移 ioffset指定主机上到指定的端口号。
+DatagramPacket(byte[] buf, int length, SocketAddress address) 构造用于发送长度的分组的数据报包 length指定主机上到指定的端口号。
+
+所有方法
+InetAddress getAddress() 返回该数据报发送或接收数据报的计算机的IP地址。
+byte[] getData() 返回数据缓冲区。
+int getLength() 返回要发送的数据的长度或接收到的数据的长度。
+int getOffset() 返回要发送的数据的偏移量或接收到的数据的偏移量。
+int getPort() 返回发送数据报的远程主机上的端口号，或从中接收数据报的端口号。
+SocketAddress getSocketAddress() 获取该数据包发送到或正在从其发送的远程主机的SocketAddress（通常为IP地址+端口号）。
+void setAddress(InetAddress iaddr) 设置该数据报发送到的机器的IP地址。
+void setData(byte[] buf) 设置此数据包的数据缓冲区。
+void setData(byte[] buf, int offset, int length) 设置此数据包的数据缓冲区。
+void setLength(int length) 设置此数据包的长度。
+void setPort(int iport) 设置发送此数据报的远程主机上的端口号。
+void setSocketAddress(SocketAddress address) 设置该数据报发送到的远程主机的SocketAddress（通常是IP地址+端口号）。

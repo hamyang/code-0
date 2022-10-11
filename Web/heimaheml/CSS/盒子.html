@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*盒子
+            内容区:
+            宽度 width  高度 height
+
+            边框至少三个样式:
+            边框宽度 border-width   可以指定四个方向的边框的宽度 具有默认值
+            边框颜色 border-color   一样，默认值黑色
+            边框样式 border-style   solid表示实线   dotted表示点状虚线  dashed表示虚线 double表示双线
+
+         */
+         .box1{
+             width: 100px;
+             background-color: aqua;
+             height: 100px;
+
+             border-width: 10px;
+             border-color: red;
+             border-style: solid;
+             margin: 40px
+         }
+         .box2{
+             background-color: aquamarine;
+             width: 80px;
+             height: 80px;
+             /*边框常用简写属性 无序*/
+             border:solid 10px orchid
+         }
+         .box3{
+             width: 200px;
+             height: 200px;
+             background-color: blueviolet;
+             border: 10px orange solid;
+             /*盒子内边框常用简写*/
+             padding:20px 10px 30px 20px;
+             margin: 30px;
+         }
+         .box3_1{
+             width: 100%;
+             height: 100%;
+             background-color: brown;
+         }
+            /*盒子外边距 可以设置为负值
+                    margin-top上边距，元素向下移动理解为距离上边距距离
+                    margin-bottom下边距
+                    margin-right右边距
+                    maegin-left左边距
+                    margin 
+            */
+    </style>
+</head> 
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">
+        <div class="box3_1"></div>
+    </div>
+</body>
+</html>

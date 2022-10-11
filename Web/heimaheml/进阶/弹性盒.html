@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        /*
+         flex-grow 为弹性元素的伸展系数
+         flex-direction 指定容器中弹性元素排列方式
+                    可选值：row 默认值，弹性元素在容器中水平排列(左向右) -主轴 自左向右
+                            row-reverse 弹性元素在容器中反向水平排列(右向左) -主轴 自右向左
+                            column 弹性元素纵向排列(自上向下) 
+                            column-reverse 弹性元素方向纵向排列(自下向上)
+                            主轴：弹性元素纵向排列方向称为主轴
+                            侧轴：与主轴垂直方向称为侧轴
+
+         flex-wrap: 设置弹性元素是否在弹性容器中自动换行
+                    可选值：nowrap 默认值，元素不会自动换行
+                            wrap 元素沿着辅轴方向自动换行
+                            wrap-reverse 元素沿着辅轴反方向换行
+
+         justify-content 如何分配主轴上的空白空间
+                    可选值：flex-start 元素沿着主轴起边排列
+                            flex-end 元素沿着主轴终边排列
+                            center 元素居中排列
+                            space-around 空白分布到元素两侧
+                            space-between 空白均匀分布到元素间
+                            space-evenly 空白分布到元素的单侧   
+
+         align-items:元素在辅轴上如何对齐
+                    可选值：stretch 默认值，将元素的长度设置为相同的值
+                            flex-start 元素不会拉伸，沿着辅轴起边对齐
+                            flex-end 沿着辅轴的终边对齐
+                            center 居中对齐
+                            baseline 基线对齐    
+                            
+           flex-basis 指定的时元素在主轴上的基础长度 默认值是auto 
+                    如果主轴是 横向的 则该值指的是元素的宽度                            
+                    如果主轴是 纵向的 则该值指的是元素的高度
+           flex 简写属性  flex 增长 缩减 基础；
+           ir
+           order 决定元素的排列顺序                                        
+         */
+        ul{
+            width: 500px;
+            border: 10px red solid;
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            width: 200px;
+            height: 100px;
+            background-color: bisque;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+        }
+        li:nth-child(1){
+            flex-grow: 1;
+            order: 2;
+        }
+        li:nth-child(2){
+            background-color: aqua;
+            flex-grow: 2;
+            order: 1;
+        }
+        li:nth-child(3){
+            background-color: chartreuse;
+            flex-grow: 3;
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>

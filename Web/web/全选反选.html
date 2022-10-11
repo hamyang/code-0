@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function checkAll() {
+            // getElementsByTagName可以根据标签名来进行查询并返回集合
+            // let elementsByTagName = document.getElementsByTagName("input");
+            let elementsByName = document.getElementsByName("hobby");
+            for (var i = 0; i < elementsByName.length; i++) {
+                elementsByName[i].checked = true;
+            }
+        }
+
+        function checkNo() {
+            let elementsByName = document.getElementsByName("hobby");
+            for (var i = 0; i < elementsByName.length; i++) {
+                elementsByName[i].checked = false;
+            }
+        }
+
+        function checkReverse() {
+            let elementsByName = document.getElementsByName("hobby");
+            for (var i = 0; i < elementsByName.length; i++) {
+                elementsByName[i].checked = !elementsByName[i].checked;
+            }
+        }
+    </script>
+</head>
+<body>
+兴趣爱好
+<input type="checkbox" name="hobby" value="cpp">c++
+<input type="checkbox" name="hobby" value="java">java
+<input type="checkbox" name="hobby" value="js">javaScript
+<br/>
+<button onclick="checkAll()">全选</button>
+<button onclick="checkNo()">全不选</button>
+<button onclick="checkReverse()">反选</button>
+</body>
+</html>

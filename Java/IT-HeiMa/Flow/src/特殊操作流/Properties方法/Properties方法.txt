@@ -1,0 +1,22 @@
+构造方法
+Properties()
+创建一个没有默认值的空属性列表。
+Properties(Properties defaults)
+创建具有指定默认值的空属性列表。
+
+所有方法
+String getProperty(String key)使用此属性列表中指定的键搜索属性。
+String getProperty(String key, String defaultValue)使用此属性列表中指定的键搜索属性。
+void list(PrintStream out)将此属性列表打印到指定的输出流。
+void list(PrintWriter out)将此属性列表打印到指定的输出流。
+void load(InputStream inStream)从输入字节流读取属性列表（键和元素对）。
+void load(Reader reader)以简单的线性格式从输入字符流读取属性列表（关键字和元素对）。
+void loadFromXML(InputStream in)将指定输入流中的XML文档表示的所有属性加载到此属性表中。
+Enumeration<?> propertyNames()返回此属性列表中所有键的枚举，包括默认属性列表中的不同键，如果尚未从主属性列表中找到相同名称的键。
+void save(OutputStream out, String comments)已弃用,如果在保存属性列表时发生I / O错误，此方法不会抛出IOException。 保存属性列表的store(OutputStream out, String comments)方法是通过store(OutputStream out, String comments)方法或storeToXML(OutputStream os, String comment)方法。
+Object setProperty(String key, String value) 致电 Hashtable方法 put 。
+void store(OutputStream out, String comments) 将此属性列表（键和元素对）写入此 Properties表中，以适合于使用 load(InputStream)方法加载到 Properties表中的格式输出流。
+void store(Writer writer, String comments) 将此属性列表（键和元素对）写入此 Properties表中，以适合使用 load(Reader)方法的格式输出到输出字符流。
+void storeToXML(OutputStream os, String comment) 发出表示此表中包含的所有属性的XML文档。
+void storeToXML(OutputStream os, String comment, String encoding) 使用指定的编码发出表示此表中包含的所有属性的XML文档。
+Set<String> stringPropertyNames() 返回此属性列表中的一组键，其中键及其对应的值为字符串，包括默认属性列表中的不同键，如果尚未从主属性列表中找到相同名称的键。

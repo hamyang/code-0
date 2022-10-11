@@ -1,0 +1,7 @@
+Collection集合常用方法：
+boolean add(E e):添加元素
+boolean remove(Object O):从集合中移除指定元素
+void clear():清空集合中的元素
+boolean contains(Object O):判断集合中是否存在指定的元素
+boolean isEmpty();判断集合中元素是否为空
+int size():集合的长度,也就是集合中的元素个数

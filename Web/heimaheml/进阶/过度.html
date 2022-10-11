@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除默认样式 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 800px;
+            height: 800px;
+            background-color: aqua;
+            /* 开启bfa */
+            overflow: hidden;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            margin-left: 0px;
+        }
+        .box1:hover div{
+            transition-property:all;
+            width: 200px;
+            height: 200px;
+            margin-left:600px;
+        }
+        .box2{
+            background-color: darkgoldenrod;
+            transition-duration: 2s;/*过度效果*/
+            /* transition-timing-function:ease */
+            /* transition:2s margin-left 1s cubil-bezier(0.165, 0.84, 0.44, 1);只能与选一个不然报错 */
+        }
+        .box3{
+            background-color: blueviolet;
+            animation-duration:1s;
+            /* transition-timing-function:ease */
+            /* transition:2s margin-left 1s cubil-bezier(0.165, 0.84, 0.44, 1);只能与选一个不然报错 */
+
+            /* transition-property:指定要执行过度的属性 多个属性间使用，隔开 所有属性都过度使用all关键字
+               transition-duration:指定(过度)效果的持续的时间(分为步数) 
+               transition-timing-function: 过度的时序函数 指定过度的执行方式
+                                        可选值:step(n) 执行步数(跳跳)
+                                               ease 默认值先加速后减速
+                                               linear 匀速运动
+                                               ease-in 加速运动
+                                               ease-out 减速运动
+                                               ease-in-out 先加速 后减速
+              cubil-bezier() 来指定时序函数 cubit网站可查
+                                         end，在时间结束时执行过度(默认值)
+                                         start， 在时间开始时执行过度      
+              transition 简写属性可同时设置 
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

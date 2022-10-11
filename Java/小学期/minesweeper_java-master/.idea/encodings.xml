@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/源代码/java_saolei/src/bean/HeroBean.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/源代码/java_saolei/src/dialog/AboutSweeping.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/源代码/java_saolei/src/dialog/HeroDialog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/源代码/java_saolei/src/dialog/UserDefinedJDialog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/源代码/java_saolei/src/listenner/Listener.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/源代码/java_saolei/src/listenner/UserDefinedListener.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/源代码/java_saolei/src/main/MainFrame.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/源代码/java_saolei/src/panel/BombJMenuBar.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/源代码/java_saolei/src/tools/StaticTool.java" charset="GBK" />
+  </component>
+</project>

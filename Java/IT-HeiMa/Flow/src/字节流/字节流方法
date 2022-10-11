@@ -1,0 +1,21 @@
+字节输出流【OutputStream】
+java.io.OutputStream 抽象类是表示字节输出流的所有类的超类，将指定的字节信息写出到目的地。它定义了字节输出流的基本共性功能方法。
+
+public void close() ：关闭此输出流并释放与此流相关联的任何系统资源。
+public void flush() ：刷新此输出流并强制任何缓冲的输出字节被写出。
+public void write(byte[] b) ：将 b.length字节从指定的字节数组写入此输出流。
+public void write(byte[] b, int off, int len) ：从指定的字节数组写入 len字节，从偏移量 off开始输出到此输出流。
+public abstract void write(int b) ：将指定的字节输出流。
+FileOutputStream类
+java.io.FileOutputStream 类是文件输出流，用于将数据写出到文件。
+
+构造方法
+public FileOutputStream(File file) ：创建文件输出流以写入由指定的 File对象表示的文件。
+public FileOutputStream(String name) ： 创建文件输出流以指定的名称写入文件。
+当你创建一个流对象时，必须传入一个文件路径。该路径下，如果没有这个文件，会创建该文件。如果有这个文件，会清空这个文件的数据。
+
+数据续写
+public FileOutputStream(File file, boolean append) ： 创建文件输出流以写入由指定的 File对象表示的文件。
+public FileOutputStream(String name, boolean append) ： 创建文件输出流以指定的名称写入文件
+这两个构造方法，参数中都需要传入一个boolean类型的值， true 表示追加数据， false 表示清空原有数据
+

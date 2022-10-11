@@ -1,0 +1,36 @@
+构造方法
+ObjectOutputStream() 为完全重新实现ObjectOutputStream的子类提供一种方法，不必分配刚刚被ObjectOutputStream实现使用的私有数据。
+ObjectOutputStream(OutputStream out) 创建一个写入指定的OutputStream的ObjectOutputStream。
+
+所有方法
+protected void annotateClass(类<?> cl) 子类可以实现此方法，以允许类数据存储在流中。
+protected void annotateProxyClass(类<?> cl) 子类可以实现这种方法来存储流中的自定义数据以及动态代理类的描述符。
+void close() 关闭流。
+void defaultWriteObject() 将当前类的非静态和非瞬态字段写入此流。
+protected void drain() 排除ObjectOutputStream中的缓冲数据。
+protected boolean enableReplaceObject(boolean enable) 启用流来替换流中的对象。
+void flush() 刷新流。
+ObjectOutputStream.PutField putFields() 检索用于缓冲要写入流的持久性字段的对象。
+protected Object replaceObject(Object obj) 该方法将允许ObjectOutputStream的可信子类在序列化期间将一个对象替换为另一个对象。
+void reset() 复位将忽略已写入流的任何对象的状态。
+void useProtocolVersion(int version) 指定在编写流时使用的流协议版本。
+void write(byte[] buf) 写入一个字节数组。
+void write(byte[] buf, int off, int len) 写入一个子字节数组。
+void write(int val) 写一个字节。
+void writeBoolean(boolean val) 写一个布尔值。
+void writeByte(int val) 写入一个8位字节。
+void writeBytes(String str) 写一个字符串作为字节序列。
+void writeChar(int val) 写一个16位的字符。
+void writeChars(String str) 写一个字符串作为一系列的字符。
+protected void writeClassDescriptor(ObjectStreamClass desc) 将指定的类描述符写入ObjectOutputStream。
+void writeDouble(double val) 写一个64位的双倍。
+void writeFields() 将缓冲的字段写入流。
+void writeFloat(float val) 写一个32位浮点数。
+void writeInt(int val) 写一个32位int。
+void writeLong(long val) 写一个64位长
+void writeObject(Object obj) 将指定的对象写入ObjectOutputStream。
+protected void writeObjectOverride(Object obj) 子类使用的方法来覆盖默认的writeObject方法。
+void writeShort(int val) 写一个16位短。
+protected void writeStreamHeader() 提供了writeStreamHeader方法，因此子类可以在流中附加或预先添加自己的头。
+void writeUnshared(Object obj) 将“非共享”对象写入ObjectOutputStream。
+void writeUTF(String str) 此字符串的原始数据写入格式为 modified UTF-8 。

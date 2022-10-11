@@ -1,0 +1,6 @@
+Arrays类的sort()方法：对数组进行升序排序
+String toString()方法：将一个数组array转换成一个字符串
+void fill()方法：把数组array所有元素都赋值为指定数
+copyOf()方法：把数组array复制成一个长度为length的新数组，返回类型与复制的数组一致
+int binarySearch()方法：查询元素值在数组中的下标（要求数组中元素已经按升序排列）
+boolean equals()方法：比较两个数组是否相等

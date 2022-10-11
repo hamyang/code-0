@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="baidu-site-verification" content="U67Xy1Qfos"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页-ONESTARの客栈</title>
+    <meta name=”Description” Content=”ONESTARの客栈是一个界面友好，用于记录ONESTAR的个人生活、学习、成长过程，并以文章、图片、音乐、资源等方式进行显示的个人博客网站”>
+    <meta name=”Keywords” Content=”ONESTAR,资源库,照片墙,音乐盒″>
+
+    <script type="text/javascript"
+            src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=hLYY0tcLmVgZMbiygWMwxikVimTvbEGst4B10q6KeZauiEw5HnV996bMHrIosBPjkOl0IPXm6J8H5XqXensUSA"
+            charset="UTF-8"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .txt {
+            line-height: 50px;
+            text-align: center;
+        }
+
+        /*.txt .btn { margin: 50px 0 0;}*/
+        .txt .btn span {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            color: #00B5AD;
+            background-color: #00B5AD;
+            cursor: pointer;
+        }
+
+        .sidebar-wrapper {
+            position: relative;
+            height: 100%;
+            overflow: auto;
+        }
+
+        #dowebok {
+            background-color: #ffffff;
+        }
+
+        #dowebok .nav {
+            margin-top: 50px;
+            line-height: 40px;
+            list-style-type: none;
+        }
+
+        #dowebok .nav a {
+            display: block;
+            padding: 0 20px;
+            color: black;
+            text-decoration: none;
+        }
+
+        #dowebok .nav a:hover {
+            background-color: #00B5AD;
+        }
+
+        [data-simplersidebar='active'] {
+            box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+    <link rel="stylesheet" href="/lib/semantic/dist/semantic.min.css">
+    <link href="/images/me.jpg" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="/lib/editormd/css/editormd.min.css">
+    <link rel="stylesheet" href="/css/me.css">
+</head>
+<body>
+
+<!--导航-->
+<nav id="nav" class="gird-header" style="display: none">
+    <div class="ui m-container-mini-m">
+        <div class="ui inverted secondary stackable menu">
+
+            <!--<div class="right m-item item m-mobile-hide">-->
+            <h2 class="ui olive header item" style="font-family: STSong">ONESTAR</h2>
+            <a href="/" class="active m-item item"><i class="home icon"></i>首页</a>
+            <a href="/types/-1" class="m-item item"><i class="clone outline icon"></i>分类</a>
+            <a href="/archives" class="m-item item"><i class="coffee icon"></i>流年记</a>
+            <a href="/music" class="m-item item"><i class="music icon"></i>音乐盒</a>
+            <a href="/message" class="m-item item"><i class="book icon"></i>留言板</a>
+            <a href="/friends" class="m-item item"><i class="pencil alternate icon"></i>友人帐</a>
+            <a href="/picture" class="olive m-item item"><i class="image icon"></i>照片墙</a>
+            <a href="/resources" class="m-item item"><i class="graduation cap icon"></i>资源库</a>
+            <a href="/about" class="m-item item"><i class="info icon"></i>关于我</a>
+            <!--</div>-->
+            <div class="right m-item item">
+                <form name="search" action="/search" method="post" target="_blank">
+                    <div class="ui icon transparent input m-margin-tb-tiny" style="color: white">
+                        <input style="color: white" type="text" name="query" placeholder="Search...." value="">
+                        <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-hide" style="display: none">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+
+<!--顶部图片-->
+<div class="m-bg-class_outer" style="width: 100%;height: 800px">
+    <img src="http://images.newstar.net.cn/img/bg2.jpg" alt="" class="ui m-bg image" style="width: 100%;height: 100%">
+    <div class="m-bg-class_cover" align="center">
+        <div class="m-margin-top-maxx" align="center">
+            <img class="ui circular image" align="center" src="/images/me.jpg" style="width: 150px;height: 150px;">
+        </div>
+        <div class="m-font-size-title-mediul" align="center">ONESTAR</div>
+
+        <div class="" align="center">
+            <a href="#" class="ui tencent circular icon button"><i class="user icon"></i></a>
+            <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+            <a href="#" class="ui qq circular icon button" data-content="316392836" data-position="bottom center"><i
+                    class="qq icon"></i></a>
+            <a href="https://github.com/oneStarLR/" target="_blank" class="ui github circular icon button"
+               data-content="点击跳转GitHub" data-position="bottom center"><i class="github icon"></i></a>
+            <a href="https://onestar.blog.csdn.net/" target="_blank" class="ui csdn circular icon button"
+               data-content="点击跳转CSDN" data-position="bottom center"><i class="copyright outline icon"></i></a>
+            <a href="#" class="ui email circular icon button" data-content="onestarlr@hotmail.com"
+               data-position="bottom center"><i class="envelope  icon"></i></a>
+        </div>
+
+        <div class="ui tencent-qr flowing popup transition hidden">
+            <img src="/images/oneStar.jpg" alt="" class="ui rounded image" style="width: 110px">
+            <div align="center">公众号</div>
+        </div>
+        <div class="ui wechat-qr flowing popup transition hidden">
+            <img src="/images/oneStarWechat.jpg" alt="" class="ui rounded image" style="width: 110px">
+            <div align="center">微信</div>
+        </div>
+        <div class="ui qq-qr flowing popup transition hidden">
+            <img src="/images/qq.jpg" alt="" class="ui rounded image" style="width: 110px">
+            <div align="center">QQ</div>
+        </div>
+
+        <div class="m-font-size-text" align="center">欢迎来到我的客栈，我是一颗星，夜空中最亮的那颗</div>
+        <hr style="width: 40%">
+        <h5 class="m-font-size-text-init-title m-margin-top-large">“大圣，此去欲何?”</h5>
+        <h5 class="m-font-size-text-init-title">“踏南天，碎凌霄”</h5>
+        <h5 class="m-font-size-text-init-title">“若一去不回……”</h5>
+        <h5 class="m-font-size-text-init-title">“便一去不回”</h5>
+        <div id="waypoint" class="ui m-margin-top-large" align="center">
+            <a href="/" class="ui circular icon button m-opacity-small m-item item m-mobile-hide m-index-btn"><i
+                    class="home icon"></i>首页</a>
+            <a href="/types/-1" class="ui circular icon button m-opacity-small m-item item m-mobile-hide m-index-btn"><i
+                    class="clone outline icon"></i>分类</a>
+            <a href="/archives" class="ui circular icon button m-opacity-small m-item item m-mobile-hide"><i
+                    class="coffee icon"></i>流年记</a>
+            <a href="/music" class="ui circular icon button m-opacity-small m-item item m-mobile-hide"><i
+                    class="music icon"></i>音乐盒</a>
+            <a href="/message" class="ui circular icon button m-opacity-small m-item item m-mobile-hide"><i
+                    class="book icon"></i>留言板</a>
+            <a href="/friends" class="ui circular icon button m-opacity-small m-item item m-mobile-hide"><i
+                    class="pencil alternate icon"></i>友人帐</a>
+            <a href="/picture" class="ui circular icon button m-opacity-small m-item item m-mobile-hide"><i
+                    class="image icon"></i>照片墙</a>
+            <a href="/resources" class="ui circular icon button m-opacity-small m-item item m-mobile-hide"><i
+                    class="graduation cap icon"></i>资源库</a>
+            <a href="/about" class="ui circular icon button m-opacity-small m-item item m-mobile-hide"><i
+                    class="info icon"></i>关于我</a>
+        </div>
+        <div class="hiddenDiv"></div>
+    </div>
+
+</div>
+
+
+<!--最新推荐-->
+<div class="ui m-padded-tb-large">
+    <div class="ui m-container-small m-opacity">
+        <div class="ui secondary segment " align="center">
+            <i class="bookmark icon"></i>最新推荐
+        </div>
+    </div>
+    <div class="ui stackable m-container-mini m-opacity grid">
+        <div class="m-margin-tb-tiny four wide column">
+            <a href="/blog/53" class="class_outer" target="_blank">
+                <img src="https://note.youdao.com/yws/api/personal/file/B6C3A685B8EE430DB8ABFDD29575FD86?method=download&amp;shareKey=41b151677fff21fab4df495576d7a92e"
+                     alt="" class="ui rounded image">
+                <span class="class_cover">
+                     <h4 class="m-font-size-blog-text m-margin-tb-tiny">完结——十年之约</h4>
+                </span>
+            </a>
+        </div>
+        <div class="m-margin-tb-tiny four wide column">
+            <a href="/blog/26" class="class_outer" target="_blank">
+                <img src="https://note.youdao.com/yws/api/personal/file/EEB40CE03F1A451AA77936EB5432EABD?method=download&amp;shareKey=c5a62b8d86f08bf76ae15408b53ca7ae"
+                     alt="" class="ui rounded image">
+                <span class="class_cover">
+                     <h4 class="m-font-size-blog-text m-margin-tb-tiny">大圣，此去欲何?</h4>
+                </span>
+            </a>
+        </div>
+        <div class="m-margin-tb-tiny four wide column">
+            <a href="/blog/25" class="class_outer" target="_blank">
+                <img src="https://note.youdao.com/yws/api/personal/file/83D553511A8643F680BD21C03D963E70?method=download&amp;shareKey=2985e6991de6d823544f142923b1b2cc"
+                     alt="" class="ui rounded image">
+                <span class="class_cover">
+                     <h4 class="m-font-size-blog-text m-margin-tb-tiny">Java入门学习路线目录索引</h4>
+                </span>
+            </a>
+        </div>
+        <div class="m-margin-tb-tiny four wide column">
+            <a href="/blog/24" class="class_outer" target="_blank">
+                <img src="https://note.youdao.com/yws/api/personal/file/1DEBA60653854130B107CB49E3D3AD83?method=download&amp;shareKey=3ace447cd59e0d0500d9000e82a8ae40"
+                     alt="" class="ui rounded image">
+                <span class="class_cover">
+                     <h4 class="m-font-size-blog-text m-margin-tb-tiny">愿你编码半生，归来仍是少年</h4>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--中间内容-->
+<div class="m-padded-tb-big animated fadeIn">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!--博客内容-->
+            <div class="ui vertical segment">
+                <div class="ui m-container-small m-opacity">
+                    <div class="ui secondary segment " align="center">
+                        <i class="bookmark icon"></i>最新文章
+                    </div>
+                </div>
+                <!--博文列表-->
+                <div class="ui padded segment m-padded-tb-large m-opacity">
+                    <div class="ui large aligned mobile reversed stackable grid">
+                        <!--博文信息-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header"><a href="/blog/94" target="_blank" class="m-black m-title-font">CentOS7安装配置Kafka3.2.0（含SpringBoot连接测试）</a>
+                            </h3>
+                            <p class="m-text m-margin-top-max">
+                                Kafka是由Apache软件基金会开发的一个开源流处理平台，由Scala和Java编写。Kafka是一种高吞吐量的分布式发布订阅消息系统，它可以处理消费者在网站中的所有动作流数据。
+                                这种动作（网页浏览，搜索和其他用户的行动）是在现代网络上的许多社会功能的一个关键因素。 ......</p>
+                            <div class="ui m-margin-top-max grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="/images/me.jpg" alt="" class="ui avatar image">
+                                            <div class="content"><a href="/about" target="_blank"
+                                                                    class="header">ONESTAR</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span>2022-07-20</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> <span>573</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="comment outline icon"></i> <span>6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">Kafka</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--博文图片-->
+                        <div class="five wide column">
+                            <a href="/blog/94" target="_blank">
+                                <img src="http://images.newstar.net.cn/img/blog66.jpg" alt="" class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ui padded segment m-padded-tb-large m-opacity">
+                    <div class="ui large aligned mobile reversed stackable grid">
+                        <!--博文信息-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header"><a href="/blog/93" target="_blank" class="m-black m-title-font">博客系统cdn失效问题已修复</a>
+                            </h3>
+                            <p class="m-text m-margin-top-max">
+                                本次bug修复提交的代码同步了现在博客所有功能，之前增加了资源库页面和流年记页面并添加了部分功能，但代码一直没有提交，本次bug修改将所有功能同步，喜欢的小伙伴别忘了给个star以鼓励......</p>
+                            <div class="ui m-margin-top-max grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="/images/me.jpg" alt="" class="ui avatar image">
+                                            <div class="content"><a href="/about" target="_blank"
+                                                                    class="header">ONESTAR</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span>2022-05-20</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> <span>1286</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="comment outline icon"></i> <span>33</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">博客系统开发</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--博文图片-->
+                        <div class="five wide column">
+                            <a href="/blog/93" target="_blank">
+                                <img src="https://note.youdao.com/yws/api/personal/file/B914945CA6184868926EB7B05C924F77?method=download&amp;shareKey=6d00c750d56573307435e9772b7d8618"
+                                     alt="" class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ui padded segment m-padded-tb-large m-opacity">
+                    <div class="ui large aligned mobile reversed stackable grid">
+                        <!--博文信息-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header"><a href="/blog/91" target="_blank" class="m-black m-title-font">CentOS7
+                                搭建EMQ X 服务</a></h3>
+                            <p class="m-text m-margin-top-max">EMQ X 用于支持各种接入标准 MQTT
+                                协议的设备，实现从设备端到服务器端的消息传递，以及从服务器端到设备端的设备控制和消息转发，从而实现物联网设备的数据采集和对设备的操作控制，目前广泛应用于全球物联网市场......</p>
+                            <div class="ui m-margin-top-max grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="/images/me.jpg" alt="" class="ui avatar image">
+                                            <div class="content"><a href="/about" target="_blank"
+                                                                    class="header">ONESTAR</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span>2022-03-09</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> <span>1399</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="comment outline icon"></i> <span>16</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">EMQ
+                                        X</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--博文图片-->
+                        <div class="five wide column">
+                            <a href="/blog/91" target="_blank">
+                                <img src="http://images.newstar.net.cn/img/blog64.png" alt="" class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ui padded segment m-padded-tb-large m-opacity">
+                    <div class="ui large aligned mobile reversed stackable grid">
+                        <!--博文信息-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header"><a href="/blog/90" target="_blank" class="m-black m-title-font">如何写出让面试官眼前一亮的Java开发简历（附模板）</a>
+                            </h3>
+                            <p class="m-text m-margin-top-max">
+                                总体来说，对于程序员的简历，一切从简，不要弄的花里胡哨，简约的模板，简约的字体，颜色黑白就好，要让HR有看下去的欲望，内容要突出个人亮点，下面会细说，文末会分享我自己前段时间出去面试的简历供大家参考，另外还会附带大量简历模板......</p>
+                            <div class="ui m-margin-top-max grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="/images/me.jpg" alt="" class="ui avatar image">
+                                            <div class="content"><a href="/about" target="_blank"
+                                                                    class="header">ONESTAR</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span>2021-10-25</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> <span>3775</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="comment outline icon"></i> <span>37</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank"
+                                       class="ui teal basic label m-padded-tiny m-text-thin">面试</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--博文图片-->
+                        <div class="five wide column">
+                            <a href="/blog/90" target="_blank">
+                                <img src="https://images.newstar.net.cn/img/blog63.jpg" alt="" class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ui padded segment m-padded-tb-large m-opacity">
+                    <div class="ui large aligned mobile reversed stackable grid">
+                        <!--博文信息-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header"><a href="/blog/89" target="_blank" class="m-black m-title-font">金九银十，该如何备战（自身经历，纯干货）</a>
+                            </h3>
+                            <p class="m-text m-margin-top-max">
+                                从三月份开始（实际可能更早），便开始准备笔试面试，刷过算法（到现在为止都还是两数之和），看过源码（这个给我加分挺多的），也花了时间在一些基础的底层，总之，八股对于面试还是必不可少的，文末分享最新整理面试资料......</p>
+                            <div class="ui m-margin-top-max grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="/images/me.jpg" alt="" class="ui avatar image">
+                                            <div class="content"><a href="/about" target="_blank"
+                                                                    class="header">ONESTAR</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span>2021-10-15</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> <span>2927</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="comment outline icon"></i> <span>27</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank"
+                                       class="ui teal basic label m-padded-tiny m-text-thin">面试</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--博文图片-->
+                        <div class="five wide column">
+                            <a href="/blog/89" target="_blank">
+                                <img src="https://images.newstar.net.cn/img/blog620.jpg" alt=""
+                                     class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ui padded segment m-padded-tb-large m-opacity">
+                    <div class="ui large aligned mobile reversed stackable grid">
+                        <!--博文信息-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header"><a href="/blog/88" target="_blank" class="m-black m-title-font">我想要的，到底是什么？</a>
+                            </h3>
+                            <p class="m-text m-margin-top-max">
+                                人生就是不断的寻找，不断的选择，有的人一直在路上，而有的人已经停下来了，我们会有很多的机遇，但这些机遇，都在我们主动寻找的路上，还是那句话：对待生命，不妨大胆一点，因为我们终究要失去它！多去尝试，多主动去探索，人生本应有很多种可能......</p>
+                            <div class="ui m-margin-top-max grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="/images/me.jpg" alt="" class="ui avatar image">
+                                            <div class="content"><a href="/about" target="_blank"
+                                                                    class="header">ONESTAR</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span>2021-10-09</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> <span>2191</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="comment outline icon"></i> <span>28</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">我的故事</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--博文图片-->
+                        <div class="five wide column">
+                            <a href="/blog/88" target="_blank">
+                                <img src="https://images.newstar.net.cn/img/back1.jpg" alt="" class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ui padded segment m-padded-tb-large m-opacity">
+                    <div class="ui large aligned mobile reversed stackable grid">
+                        <!--博文信息-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header"><a href="/blog/87" target="_blank" class="m-black m-title-font">被繁华遗忘的古村</a>
+                            </h3>
+                            <p class="m-text m-margin-top-max">
+                                在深圳宝安区福永街道凤凰山脚下，有一个南宋民族英雄文天祥后代的聚集地，一个拥有700多年历史的古老村落——凤凰古村，当深圳这个昔日的小渔村已成为举世瞩目的大都市后，凤凰古村却依然像一个大家闺秀，不被外界的繁华和喧嚣所诱惑，默默地坚守着......</p>
+                            <div class="ui m-margin-top-max grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="/images/me.jpg" alt="" class="ui avatar image">
+                                            <div class="content"><a href="/about" target="_blank"
+                                                                    class="header">ONESTAR</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span>2021-04-01</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> <span>3574</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="comment outline icon"></i> <span>59</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">杂文琐记</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--博文图片-->
+                        <div class="five wide column">
+                            <a href="/blog/87" target="_blank">
+                                <img src="https://images.newstar.net.cn/img/a.jpg" alt="" class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ui padded segment m-padded-tb-large m-opacity">
+                    <div class="ui large aligned mobile reversed stackable grid">
+                        <!--博文信息-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header"><a href="/blog/86" target="_blank" class="m-black m-title-font">@EventListener注解
+                                -【Spring底层原理】</a></h3>
+                            <p class="m-text m-margin-top-max">
+                                上篇我们讲到实现事件监听可以使用实现ApplicationListener接口，如果有多个方法需要监听事件，那岂不是每个方法都要放在类中实现ApplicationListener接口，这样并不是很方便，所以spring为我们提供了另外一种方式实现事件监听：使用@EventListener注解......</p>
+                            <div class="ui m-margin-top-max grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="/images/me.jpg" alt="" class="ui avatar image">
+                                            <div class="content"><a href="/about" target="_blank"
+                                                                    class="header">ONESTAR</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span>2021-03-25</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> <span>2687</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="comment outline icon"></i> <span>24</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">框架底层原理</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--博文图片-->
+                        <div class="five wide column">
+                            <a href="/blog/86" target="_blank">
+                                <img src="https://images.newstar.net.cn/img/blog59.jpg" alt="" class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ui padded segment m-padded-tb-large m-opacity">
+                    <div class="ui large aligned mobile reversed stackable grid">
+                        <!--博文信息-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header"><a href="/blog/85" target="_blank" class="m-black m-title-font">Spring中ApplicationListener
+                                -【Spring底层原理】</a></h3>
+                            <p class="m-text m-margin-top-max">
+                                Spring对事件机制也提供了支持，一个事件被发布后，被对应的监听器监听到，执行对应方法。并且Spring内已经提供了许多事件，ApplicationEvent可以说是Spring事件的顶级父类。ApplicationListener
+                                是监听器的顶级接口，事件被触发后，onApplicationEvent方法就会执行......</p>
+                            <div class="ui m-margin-top-max grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="/images/me.jpg" alt="" class="ui avatar image">
+                                            <div class="content"><a href="/about" target="_blank"
+                                                                    class="header">ONESTAR</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span>2021-03-24</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> <span>1943</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="comment outline icon"></i> <span>28</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">框架底层原理</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--博文图片-->
+                        <div class="five wide column">
+                            <a href="/blog/85" target="_blank">
+                                <img src="https://images.newstar.net.cn/img/blog58.jpg" alt="" class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ui padded segment m-padded-tb-large m-opacity">
+                    <div class="ui large aligned mobile reversed stackable grid">
+                        <!--博文信息-->
+                        <div class="eleven wide column ">
+                            <h3 class="ui header"><a href="/blog/84" target="_blank" class="m-black m-title-font">BeanDefinitionRegistryPostProcessor接口
+                                -【Spring底层原理】</a></h3>
+                            <p class="m-text m-margin-top-max">
+                                BeanDefinition是定义bean的，BeanDefinitionRegistry则是bean定义信息的保存中心，也叫注册中心，保存了bean的所有定义，以后BeanFactory就是按照BeanDefinitionRegistry里面保存的每一个bean定义信息创建bean实例。bean是单例还是多例，bean的类型，bean的ID等信息，都是存在BeanDefinitionRegist......</p>
+                            <div class="ui m-margin-top-max grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="/images/me.jpg" alt="" class="ui avatar image">
+                                            <div class="content"><a href="/about" target="_blank"
+                                                                    class="header">ONESTAR</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span>2021-03-24</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> <span>1613</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="comment outline icon"></i> <span>13</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">框架底层原理</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--博文图片-->
+                        <div class="five wide column">
+                            <a href="/blog/84" target="_blank">
+                                <img src="https://images.newstar.net.cn/img/blogg57.jpg" alt=""
+                                     class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--分页-->
+            <div class="ui bottom attached segment m-opacity stackable grid">
+                <div class="three wide column" align="center">
+
+                </div>
+
+                <div class="ten wide column" align="center">
+                    <p><span>1</span> / <span>7</span></p>
+                </div>
+
+                <div class="three wide column" align="center">
+                    <a class="item" href="/?pageNum=2">下一页</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!--置顶图标-->
+<div id="toolbar" class="m-padded m-fixed m-right-bottom" style="display: none">
+    <div class="ui vertical icon buttons ">
+        <div class="ui center aligned basic segment" style="margin-bottom: 0">
+            <button id="payButton" class="ui orange basic circular button">消息</button>
+        </div>
+        <a href="#" class="ui center aligned basic segment icon" style="margin-top: 0"><i
+                class="ui medium orange chevron up icon"></i> </a>
+    </div>
+</div>
+
+
+<div class="ui payQR flowing popup transition hidden" style="overflow-y: auto; overflow-x: hidden ">
+    <div class="ui orange basic">
+        <div style="font-size: small !important;width: 200px;height: 550px">
+
+            <div style="font-size: 18px;font-weight: bold;color: #F08047">最新评论</div>
+
+            <div class="ui relaxed divided dropdown list">
+
+                <div class="item">
+                    <!--<i class="large github middle aligned icon"></i>-->
+                    <a target="_blank" href="/blog/50" class="content">
+                        <div class="header m-p1" style="margin-left: 10px">【SpringBoot搭建个人博客】- 博客详情页面显示（十一）</div>
+                        <div class="description m-p1" style="margin-top: 20px;margin-left: 15px;margin-bottom: 13px;">
+                            测试一下
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <!--<i class="large github middle aligned icon"></i>-->
+                    <a target="_blank" href="/blog/50" class="content">
+                        <div class="header m-p1" style="margin-left: 10px">【SpringBoot搭建个人博客】- 博客详情页面显示（十一）</div>
+                        <div class="description m-p1" style="margin-top: 20px;margin-left: 15px;margin-bottom: 13px;">
+                            $(function () {
+                            $(&quot;#comment-container&quot;).load(/*[[@{/comments/{blogId}(blogId=${blog.id})}]]*/);
+                            });
+                            为什么使用这个ajax请求到后台去查询评论就报空指针异常呀，添加评论又可以查询出来
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <!--<i class="large github middle aligned icon"></i>-->
+                    <a target="_blank" href="/blog/93" class="content">
+                        <div class="header m-p1" style="margin-left: 10px">博客系统cdn失效问题已修复</div>
+                        <div class="description m-p1" style="margin-top: 20px;margin-left: 15px;margin-bottom: 13px;">
+                            为什么BlogDao.xml文件的getNewComment查询和getAllRecommendBlog查询都差不多，但是getNewComment要用resultMap而getAllRecommendBlog只用resultType？
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <!--<i class="large github middle aligned icon"></i>-->
+                    <a target="_blank" href="/blog/46" class="content">
+                        <div class="header m-p1" style="margin-left: 10px">【SpringBoot搭建个人博客】- 博客管理（七）</div>
+                        <div class="description m-p1" style="margin-top: 20px;margin-left: 15px;margin-bottom: 13px;">
+                            dgggggggggggggggggggggg
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <!--<i class="large github middle aligned icon"></i>-->
+                    <a target="_blank" href="/blog/46" class="content">
+                        <div class="header m-p1" style="margin-left: 10px">【SpringBoot搭建个人博客】- 博客管理（七）</div>
+                        <div class="description m-p1" style="margin-top: 20px;margin-left: 15px;margin-bottom: 13px;">
+                            dddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwwwww
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <!--<i class="large github middle aligned icon"></i>-->
+                    <a target="_blank" href="/blog/46" class="content">
+                        <div class="header m-p1" style="margin-left: 10px">【SpringBoot搭建个人博客】- 博客管理（七）</div>
+                        <div class="description m-p1" style="margin-top: 20px;margin-left: 15px;margin-bottom: 13px;">
+                            ddddddddddddddddddddddddddddddddddddddddddddd
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <!--<i class="large github middle aligned icon"></i>-->
+                    <a target="_blank" href="/blog/46" class="content">
+                        <div class="header m-p1" style="margin-left: 10px">【SpringBoot搭建个人博客】- 博客管理（七）</div>
+                        <div class="description m-p1" style="margin-top: 20px;margin-left: 15px;margin-bottom: 13px;">
+                            ddddddddddddddddddddddddddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkyyy
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <!--<i class="large github middle aligned icon"></i>-->
+                    <a target="_blank" href="/blog/46" class="content">
+                        <div class="header m-p1" style="margin-left: 10px">【SpringBoot搭建个人博客】- 博客管理（七）</div>
+                        <div class="description m-p1" style="margin-top: 20px;margin-left: 15px;margin-bottom: 13px;">
+                            ssssssssssssssssssssssssssssssssssssgggggggggggggggggggggggggggggggggggggggggggrrrrrrrrrrrrrrrrrrrrrrr
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <!--<i class="large github middle aligned icon"></i>-->
+                    <a target="_blank" href="/blog/46" class="content">
+                        <div class="header m-p1" style="margin-left: 10px">【SpringBoot搭建个人博客】- 博客管理（七）</div>
+                        <div class="description m-p1" style="margin-top: 20px;margin-left: 15px;margin-bottom: 13px;">
+                            dddddddddddddddddddddddddddddddddddddddd
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <!--<i class="large github middle aligned icon"></i>-->
+                    <a target="_blank" href="/blog/46" class="content">
+                        <div class="header m-p1" style="margin-left: 10px">【SpringBoot搭建个人博客】- 博客管理（七）</div>
+                        <div class="description m-p1" style="margin-top: 20px;margin-left: 15px;margin-bottom: 13px;">
+                            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssfffffffffffffffffffffffffffffffffffffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--<div th:if="${blog.appreciation}">-->
+<!--<div class="ui center aligned basic segment">-->
+<!--<button id="payButton" class="ui orange basic circular button">赞赏</button>-->
+<!--</div>-->
+<!--<div class="ui payQR flowing popup transition hidden">-->
+<!--<div class="ui orange basic label">-->
+<!--<div class="ui images" style="font-size: inherit !important;">-->
+<!--<div class="image">-->
+<!--<img src="../static/images/zhifupay.jpg" th:src="@{/images/zhifupay.jpg}" alt="" class="ui rounded bordered image" style="width: 120px">-->
+<!--<div>支付宝</div>-->
+<!--</div>-->
+<!--<div class="image">-->
+<!--<img src="../static/images/wechatpay.jpg" th:src="@{/images/wechatpay.jpg}" alt="" class="ui rounded bordered image" style="width: 120px">-->
+<!--<div>微信</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!--底部栏-->
+<footer class="ui inverted vertical segment m-padded-tb-massive m-opacity">
+    <!--容器-->
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="four wide column">
+                <div style="font-size: large;font-weight: bold"
+                     class="ui inverted m-text-thin m-text-spaced m-margin-top-max">联系我
+                </div>
+                <!--<div id="newblog-container">-->
+                <!--<div class="ui inverted link list" th:fragment="newblogList">-->
+                <!--<a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}">最新文章</a>-->
+                <!--</div>-->
+                <!--</div>-->
+                <div class="ui inverted link list">
+                    <div href="#" class="m-text-thin">Email：onestarlr@hotmail.com</div>
+                    <div href="#" class="m-text-thin">QQ：316392836</div>
+                </div>
+            </div>
+
+            <div class="four wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <!--微信二维码-->
+                        <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced ">
+                            关注公众号
+                        </div>
+                        <img src="/images/oneStar.jpg" class="ui m-margin-top rounded image" alt=""
+                             style="width: 110px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="four wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <!--微信二维码-->
+                        <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced ">
+                            问题交流（QQ群）
+                        </div>
+                        <img src="/images/QQ-question.jpg" class="ui m-margin-top rounded image" alt=""
+                             style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <!--博客运行时间统计-->
+            <div class="four wide column">
+                <div style="font-size: large;font-weight: bold"
+                     class="ui inverted  m-text-thin m-text-spaced m-margin-top">客栈信息
+                </div>
+                <!--<p id="htmer_time" class="item m-text-thin"></p>-->
+                <div id="blog-message">
+                    <div class="ui inverted link list" style="align-content: center;margin-top: 10px">
+                        <div class="m-text-thin" style="text-align: left;margin-left: 75px;">
+                            文章总数： <h2 class="ui orange header m-inline-block m-margin-top-null"
+                                      style="font-size:medium;"></h2> 篇
+                        </div>
+                        <div class="m-text-thin" style="text-align: left;margin-left: 75px">
+                            访问总数： <h2 class="ui orange header m-inline-block m-margin-top-null"
+                                      style="font-size:medium;"></h2> 次
+                        </div>
+                        <div class="m-text-thin" style="text-align: left;margin-left: 75px">
+                            评论总数： <h2 class="ui orange header m-inline-block m-margin-top-null"
+                                      style="font-size:medium;"></h2> 条
+                        </div>
+                        <div class="m-text-thin" style="text-align: left;margin-left: 75px">
+                            留言总数： <h2 class="ui orange header m-inline-block m-margin-top-null"
+                                      style="font-size:medium;"></h2> 条
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <div style="color: #F08047;margin-top: -18px" class="ui inverted m-text-thin m-text-spaced">我的客栈已营业：<span
+                id="htmer_time" class="item m-text-thin"></span> (*๓´╰╯`๓)
+        </div>
+        <a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">赣ICP备20004408号-1</a>
+    </div>
+    </div>
+
+</footer>
+
+
+<script src="/lib/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+<script src="/lib/semantic/dist/semantic.min.js"></script>
+<script src="/lib/waypoints/jquery.waypoints.min.js"></script>
+
+
+<script>
+
+
+    // 显示消息
+    $('#payButton').popup({
+        popup: $('.payQR.popup'),
+        on: 'click',
+        position: 'top right'
+    });
+
+
+    // $('#newblog-container').load(/*/footer/newblog*/"/footer/newblog");
+
+    $('#blog-message').load(/*/footer/blogmessage*/"/footer/blogmessage");
+
+
+    // 运行时间统计
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+
+    function setTime() {
+        /*此处为网站的创建时间*/
+        var create_time = Math.round(new Date(Date.UTC(2020, 01, 25, 15, 15, 15)).getTime() / 1000);
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+            + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+            + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+
+    setInterval(setTime, 1000);
+
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('waypoint'),
+        handler: function (direction) {
+            if (direction == 'down') {
+                $('#toolbar').show(100);
+            } else {
+                $('#toolbar').hide(500);
+            }
+        }
+    })
+
+
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-show');
+
+    });
+
+    // 显示公众号
+    $('.tencent').popup({
+        popup: $('.tencent-qr'),
+        position: 'bottom center'
+    });
+
+    // 显示微信
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+        position: 'bottom center'
+    });
+
+    // 显示QQ
+    $('.qq').popup({
+        popup: $('.qq-qr'),
+        position: 'bottom center'
+    });
+
+    // 显示邮箱
+    $('.email').popup();
+
+    // 显示CSDN
+    $('.csdn').popup();
+
+    // 显示github
+    $('.github').popup();
+
+    // 导航栏显示
+    var waypoint = new Waypoint({
+        element: document.getElementById('waypoint'),
+        handler: function (direction) {
+            if (direction == 'down') {
+                $('#nav').show(500);
+            } else {
+                $('#nav').hide(500);
+            }
+        }
+    })
+</script>
+</body>
+</html>

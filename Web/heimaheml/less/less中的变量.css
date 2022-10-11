@@ -1,0 +1,30 @@
+.box1,
+.box3 {
+  background-color: antiquewhite;
+}
+.box1 .box2 {
+  background-color: bisque;
+}
+.box1 .box2 .box3 {
+  background-color: blueviolet;
+}
+.box1 .box2 .box3:hover {
+  color: #bfa;
+}
+.box4 {
+  color: #bfa;
+  width: 200px;
+  height: 200px;
+}
+box6 {
+  width: 200px;
+}
+.box3 {
+  color: burlywood;
+}
+.box4 {
+  color: burlywood;
+}
+body:hover {
+  background-color: #22aa00;
+}

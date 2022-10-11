@@ -1,0 +1,36 @@
+构造方法
+ObjectInputStream() 为完全重新实现ObjectInputStream的子类提供一种方法，不必分配刚刚被ObjectInputStream实现使用的私有数据。
+ObjectInputStream(InputStream in) 创建从指定的InputStream读取的ObjectInputStream。
+
+所有方法
+int available() 返回可以读取而不阻塞的字节数。
+void close() 关闭输入流。
+void defaultReadObject() 从此流读取当前类的非静态和非瞬态字段。
+protected boolean enableResolveObject(boolean enable) 启用流以允许从流中读取的对象被替换。
+int read() 读取一个字节的数据。
+int read(byte[] buf, int off, int len) 读入一个字节数组。
+boolean readBoolean() 读取布尔值。
+byte readByte() 读取一个8位字节。
+char readChar() 读一个16位字符。
+protected ObjectStreamClass readClassDescriptor() 从序列化流读取类描述符。
+double readDouble() 读64位双倍。
+ObjectInputStream.GetField readFields() 从流中读取持久性字段，并通过名称获取它们。
+float readFloat() 读32位浮点数。
+void readFully(byte[] buf) 读取字节，阻塞直到读取所有字节。
+void readFully(byte[] buf, int off, int len) 读取字节，阻塞直到读取所有字节。
+int readInt() 读取一个32位int。
+String readLine() 已弃用 此方法无法将字节正确转换为字符。 有关详细信息和替代方案，请参阅DataInputStream。
+long readLong() 读64位长。
+Object readObject() 从ObjectInputStream读取一个对象。
+protected Object readObjectOverride() 此方法由ObjectOutputStream的受信任子类调用，该子类使用受保护的无参构造函数构造ObjectOutputStream。
+short readShort() 读取16位短。
+protected void readStreamHeader() 提供了readStreamHeader方法来允许子类读取和验证自己的流标题。
+Object readUnshared() 从ObjectInputStream读取一个“非共享”对象。
+int readUnsignedByte() 读取一个无符号的8位字节。
+int readUnsignedShort() 读取无符号16位短。
+String readUTF() 以 modified UTF-8格式读取字符串。
+void registerValidation(ObjectInputValidation obj, int prio) 在返回图之前注册要验证的对象。
+protected 类<?> resolveClass(ObjectStreamClass desc) 加载本地类等效的指定流类描述。
+protected Object resolveObject(Object obj) 此方法将允许ObjectInputStream的受信任子类在反序列化期间将一个对象替换为另一个对象。
+protected 类<?> resolveProxyClass(String[] interfaces) 返回一个代理类，它实现代理类描述符中命名的接口; 子类可以实现此方法从流中读取自定义数据以及动态代理类的描述符，从而允许它们为接口和代理类使用备用加载机制。
+int skipBytes(int len) 跳过字节。

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 存在高度塌陷问题
+                使用BFC来解决 开启方式：
+                    1.设置元素浮动（不推荐）
+                    2.将元素设置为行内块元素（不推荐）
+                    3. 将元素overflow设置为一个非visible值
+                        常用方式，overflow:hidden 以开启BFC
+`       */
+        .outer{
+            border: 10px red solid;
+            overflow: hidden;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            float: left;
+                /*如果我们不希望某个元素因为其他的元素浮动影响而改变位置
+                可以通过clear属性来清除浮动元素对当前元素所产生的影响
+                    clera 
+                       可选值：left 清除左侧浮动元素对当前元素的影响
+                               right 清除右侧浮动元素对当前元素的影响
+                               both 清除 两侧中最大影响那侧   
+            */
+        }
+             /* 使用为元素来解决 */
+        .inner::after{
+            content: '';
+            display: block;
+            clear: both;
+        }     
+        /* clearfix 这个样式可以同时解决高度塌陷和外边距重叠问题 */
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    <div style="width: 200px;height:200px;background-color:yellow;"></div>
+    <div class="box1">
+        <div class="box2">
+            <!-- <div class="box3"></div> -->
+        </div>
+    </div>
+</body>
+</html>

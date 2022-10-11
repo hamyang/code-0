@@ -1,0 +1,312 @@
+static <T> List<T> asList(T... a)
+返回由指定数组支持的固定大小的列表。
+static int binarySearch(byte[] a, byte key)
+使用二进制搜索算法搜索指定值的指定字节数组。
+static int binarySearch(byte[] a, int fromIndex, int toIndex, byte key)
+使用二进制搜索算法搜索指定值的指定字节数组的范围。
+static int binarySearch(char[] a, char key)
+使用二进制搜索算法搜索指定数组的指定值。
+static int binarySearch(char[] a, int fromIndex, int toIndex, char key)
+使用二分搜索算法搜索指定值的指定数组的范围。
+static int binarySearch(double[] a, double key)
+使用二进制搜索算法搜索指定值的指定数组的双精度值。
+static int binarySearch(double[] a, int fromIndex, int toIndex, double key)
+使用二分搜索算法搜索指定值的指定数组的双精度范围。
+static int binarySearch(float[] a, float key)
+使用二叉搜索算法搜索指定数组的浮点数。
+static int binarySearch(float[] a, int fromIndex, int toIndex, float key)
+使用二分搜索算法搜索指定数组的浮点数范围。
+static int binarySearch(int[] a, int key)
+使用二叉搜索算法搜索指定的int数组的指定值。
+static int binarySearch(int[] a, int fromIndex, int toIndex, int key)
+使用二叉搜索算法搜索指定值的指定数组的范围。
+static int binarySearch(long[] a, int fromIndex, int toIndex, long key)
+使用二分搜索算法搜索指定值的指定数组的范围。
+static int binarySearch(long[] a, long key)
+使用二进制搜索算法搜索指定数组的指定数组。
+static int binarySearch(Object[] a, int fromIndex, int toIndex, Object key)
+使用二进制搜索算法搜索指定对象的指定数组的范围。
+static int binarySearch(Object[] a, Object key)
+使用二叉搜索算法搜索指定对象的指定数组。
+static int binarySearch(short[] a, int fromIndex, int toIndex, short key)
+使用二进制搜索算法搜索指定值的指定数组的短整型范围。
+static int binarySearch(short[] a, short key)
+使用二进制搜索算法搜索指定值的指定数组的指定值。
+static <T> int binarySearch(T[] a, int fromIndex, int toIndex, T key, Comparator<? super T> c)
+使用二进制搜索算法搜索指定对象的指定数组的范围。
+static <T> int binarySearch(T[] a, T key, Comparator<? super T> c)
+使用二叉搜索算法搜索指定对象的指定数组。
+static boolean[] copyOf(boolean[] original, int newLength)
+使用 false （如有必要）复制指定的数组，截断或填充，以使副本具有指定的长度。
+static byte[] copyOf(byte[] original, int newLength)
+复制指定的数组，用零截取或填充（如有必要），以便复制具有指定的长度。
+static char[] copyOf(char[] original, int newLength)
+复制指定的数组，截断或填充空字符（如有必要），以便复制具有指定的长度。
+static double[] copyOf(double[] original, int newLength)
+复制指定的数组，用零截取或填充（如有必要），以便复制具有指定的长度。
+static float[] copyOf(float[] original, int newLength)
+复制指定的数组，用零截取或填充（如有必要），以便复制具有指定的长度。
+static int[] copyOf(int[] original, int newLength)
+复制指定的数组，用零截取或填充（如有必要），以便复制具有指定的长度。
+static long[] copyOf(long[] original, int newLength)
+复制指定的数组，用零截取或填充（如有必要），以便复制具有指定的长度。
+static short[] copyOf(short[] original, int newLength)
+复制指定的数组，用零截取或填充（如有必要），以便复制具有指定的长度。
+static <T> T[] copyOf(T[] original, int newLength)
+复制指定的数组，用空值截断或填充（如有必要），以便复制具有指定的长度。
+static <T,U> T[] copyOf(U[] original, int newLength, 类<? extends T[]> newType)
+复制指定的数组，用空值截断或填充（如有必要），以便复制具有指定的长度。
+static boolean[] copyOfRange(boolean[] original, int from, int to)
+将指定数组的指定范围复制到新数组中。
+static byte[] copyOfRange(byte[] original, int from, int to)
+将指定数组的指定范围复制到新数组中。
+static char[] copyOfRange(char[] original, int from, int to)
+将指定数组的指定范围复制到新数组中。
+static double[] copyOfRange(double[] original, int from, int to)
+将指定数组的指定范围复制到新数组中。
+static float[] copyOfRange(float[] original, int from, int to)
+将指定数组的指定范围复制到新数组中。
+static int[] copyOfRange(int[] original, int from, int to)
+将指定数组的指定范围复制到新数组中。
+static long[] copyOfRange(long[] original, int from, int to)
+将指定数组的指定范围复制到新数组中。
+static short[] copyOfRange(short[] original, int from, int to)
+将指定数组的指定范围复制到新数组中。
+static <T> T[] copyOfRange(T[] original, int from, int to)
+将指定数组的指定范围复制到新数组中。
+static <T,U> T[] copyOfRange(U[] original, int from, int to, 类<? extends T[]> newType)
+将指定数组的指定范围复制到新数组中。
+static boolean deepEquals(Object[] a1, Object[] a2)
+如果两个指定的数组彼此 深度相等 ，则返回 true 。
+static int deepHashCode(Object[] a)
+根据指定数组的“深度内容”返回哈希码。
+static String deepToString(Object[] a)
+返回指定数组的“深度内容”的字符串表示形式。
+static boolean equals(boolean[] a, boolean[] a2)
+如果两个指定的布尔数组彼此 相等 ，则返回 true 。
+static boolean equals(byte[] a, byte[] a2)
+如果两个指定的字节数组彼此 相等 ，则返回 true 。
+static boolean equals(char[] a, char[] a2)
+如果两个指定的字符数组彼此 相等 ，则返回 true 。
+static boolean equals(double[] a, double[] a2)
+如果两个指定的双精度数组彼此 相等 ，则返回 true 。
+static boolean equals(float[] a, float[] a2)
+如果两个指定的浮动数组彼此 相等 ，则返回 true 。
+static boolean equals(int[] a, int[] a2)
+如果两个指定的int数组彼此 相等 ，则返回 true 。
+static boolean equals(long[] a, long[] a2)
+如果两个指定的longs数组彼此 相等 ，则返回 true 。
+static boolean equals(Object[] a, Object[] a2)
+如果两个指定的对象数组彼此 相等 ，则返回 true 。
+static boolean equals(short[] a, short[] a2)
+如果两个指定的短裤阵列彼此 相等 ，则返回 true 。
+static void fill(boolean[] a, boolean val)
+将指定的布尔值分配给指定的布尔数组的每个元素。
+static void fill(boolean[] a, int fromIndex, int toIndex, boolean val)
+将指定的布尔值分配给指定数组布尔值的指定范围的每个元素。
+static void fill(byte[] a, byte val)
+将指定的字节值分配给指定字节数组的每个元素。
+static void fill(byte[] a, int fromIndex, int toIndex, byte val)
+将指定的字节值分配给指定字节数组的指定范围的每个元素。
+static void fill(char[] a, char val)
+将指定的char值分配给指定的char数组的每个元素。
+static void fill(char[] a, int fromIndex, int toIndex, char val)
+将指定的char值分配给指定的char数组的指定范围的每个元素。
+static void fill(double[] a, double val)
+将指定的double值分配给指定的双精度数组的每个元素。
+static void fill(double[] a, int fromIndex, int toIndex, double val)
+将指定的double值分配给指定的双精度数组范围的每个元素。
+static void fill(float[] a, float val)
+将指定的float值分配给指定的浮点数组的每个元素。
+static void fill(float[] a, int fromIndex, int toIndex, float val)
+将指定的浮点值分配给指定的浮点数组的指定范围的每个元素。
+static void fill(int[] a, int val)
+将指定的int值分配给指定的int数组的每个元素。
+static void fill(int[] a, int fromIndex, int toIndex, int val)
+将指定的int值分配给指定的int数组的指定范围的每个元素。
+static void fill(long[] a, int fromIndex, int toIndex, long val)
+将指定的long值分配给指定的longs数组的指定范围的每个元素。
+static void fill(long[] a, long val)
+将指定的long值分配给指定的longs数组的每个元素。
+static void fill(Object[] a, int fromIndex, int toIndex, Object val)
+将指定的对象引用分配给指定的对象数组的指定范围的每个元素。
+static void fill(Object[] a, Object val)
+将指定的对象引用分配给指定的对象数组的每个元素。
+static void fill(short[] a, int fromIndex, int toIndex, short val)
+将指定的短值分配给指定的短裤数组的指定范围的每个元素。
+static void fill(short[] a, short val)
+将指定的短值分配给指定的短裤数组的每个元素。
+static int hashCode(boolean[] a)
+根据指定数组的内容返回哈希码。
+static int hashCode(byte[] a)
+根据指定数组的内容返回哈希码。
+static int hashCode(char[] a)
+根据指定数组的内容返回哈希码。
+static int hashCode(double[] a)
+根据指定数组的内容返回哈希码。
+static int hashCode(float[] a)
+根据指定数组的内容返回哈希码。
+static int hashCode(int[] a)
+根据指定数组的内容返回哈希码。
+static int hashCode(long[] a)
+根据指定数组的内容返回哈希码。
+static int hashCode(Object[] a)
+根据指定数组的内容返回哈希码。
+static int hashCode(short[] a)
+根据指定数组的内容返回哈希码。
+static void parallelPrefix(double[] array, DoubleBinaryOperator op)
+使用提供的功能，并行地计算给定阵列的每个元素。
+static void parallelPrefix(double[] array, int fromIndex, int toIndex, DoubleBinaryOperator op)
+对于数组的给定子范围执行 parallelPrefix(double[], DoubleBinaryOperator) 。
+static void parallelPrefix(int[] array, IntBinaryOperator op)
+使用提供的功能，并行地计算给定阵列的每个元素。
+static void parallelPrefix(int[] array, int fromIndex, int toIndex, IntBinaryOperator op)
+对于数组的给定子范围执行 parallelPrefix(int[], IntBinaryOperator) 。
+static void parallelPrefix(long[] array, int fromIndex, int toIndex, LongBinaryOperator op)
+对于数组的给定子范围执行 parallelPrefix(long[], LongBinaryOperator) 。
+static void parallelPrefix(long[] array, LongBinaryOperator op)
+使用提供的功能，并行地计算给定阵列的每个元素。
+static <T> void parallelPrefix(T[] array, BinaryOperator<T> op)
+使用提供的功能，并行地计算给定阵列的每个元素。
+static <T> void parallelPrefix(T[] array, int fromIndex, int toIndex, BinaryOperator<T> op)
+对于数组的给定子范围执行 parallelPrefix(Object[], BinaryOperator) 。
+static void parallelSetAll(double[] array, IntToDoubleFunction generator)
+使用提供的生成函数来并行设置指定数组的所有元素来计算每个元素。
+static void parallelSetAll(int[] array, IntUnaryOperator generator)
+使用提供的生成函数来并行设置指定数组的所有元素来计算每个元素。
+static void parallelSetAll(long[] array, IntToLongFunction generator)
+使用提供的生成函数来并行设置指定数组的所有元素来计算每个元素。
+static <T> void parallelSetAll(T[] array, IntFunction<? extends T> generator)
+使用提供的生成函数来并行设置指定数组的所有元素来计算每个元素。
+static void parallelSort(byte[] a)
+按照数字顺序排列指定的数组。
+static void parallelSort(byte[] a, int fromIndex, int toIndex)
+按照数字顺序排列数组的指定范围。
+static void parallelSort(char[] a)
+按照数字顺序排列指定的数组。
+static void parallelSort(char[] a, int fromIndex, int toIndex)
+按照数字顺序排列数组的指定范围。
+static void parallelSort(double[] a)
+按照数字顺序排列指定的数组。
+static void parallelSort(double[] a, int fromIndex, int toIndex)
+按照数字顺序排列数组的指定范围。
+static void parallelSort(float[] a)
+按照数字顺序排列指定的数组。
+static void parallelSort(float[] a, int fromIndex, int toIndex)
+按照数字顺序排列数组的指定范围。
+static void parallelSort(int[] a)
+按照数字顺序排列指定的数组。
+static void parallelSort(int[] a, int fromIndex, int toIndex)
+按照数字顺序排列数组的指定范围。
+static void parallelSort(long[] a)
+按照数字顺序排列指定的数组。
+static void parallelSort(long[] a, int fromIndex, int toIndex)
+按照数字顺序排列数组的指定范围。
+static void parallelSort(short[] a)
+按照数字顺序排列指定的数组。
+static void parallelSort(short[] a, int fromIndex, int toIndex)
+按照数字顺序排列数组的指定范围。
+static <T extends Comparable<? super T>>
+void parallelSort(T[] a)
+对指定对象升序排列的阵列，根据natural ordering的元素。
+static <T> void parallelSort(T[] a, Comparator<? super T> cmp)
+根据指定的比较器引发的顺序对指定的对象数组进行排序。
+static <T extends Comparable<? super T>>
+void parallelSort(T[] a, int fromIndex, int toIndex)
+对指定对象升序排列的数组的指定范围内，根据natural ordering的元素。
+static <T> void parallelSort(T[] a, int fromIndex, int toIndex, Comparator<? super T> cmp)
+根据指定的比较器引发的顺序对指定的对象数组的指定范围进行排序。
+static void setAll(double[] array, IntToDoubleFunction generator)
+使用提供的生成函数来计算每个元素，设置指定数组的所有元素。
+static void setAll(int[] array, IntUnaryOperator generator)
+使用提供的生成函数来计算每个元素，设置指定数组的所有元素。
+static void setAll(long[] array, IntToLongFunction generator)
+使用提供的生成函数来计算每个元素，设置指定数组的所有元素。
+static <T> void setAll(T[] array, IntFunction<? extends T> generator)
+使用提供的生成函数来计算每个元素，设置指定数组的所有元素。
+static void sort(byte[] a)
+按照数字顺序排列指定的数组。
+static void sort(byte[] a, int fromIndex, int toIndex)
+按升序排列数组的指定范围。
+static void sort(char[] a)
+按照数字顺序排列指定的数组。
+static void sort(char[] a, int fromIndex, int toIndex)
+按升序排列数组的指定范围。
+static void sort(double[] a)
+按照数字顺序排列指定的数组。
+static void sort(double[] a, int fromIndex, int toIndex)
+按升序排列数组的指定范围。
+static void sort(float[] a)
+按照数字顺序排列指定的数组。
+static void sort(float[] a, int fromIndex, int toIndex)
+按升序排列数组的指定范围。
+static void sort(int[] a)
+按照数字顺序排列指定的数组。
+static void sort(int[] a, int fromIndex, int toIndex)
+按升序排列数组的指定范围。
+static void sort(long[] a)
+按照数字顺序排列指定的数组。
+static void sort(long[] a, int fromIndex, int toIndex)
+按升序排列数组的指定范围。
+static void sort(Object[] a)
+对指定对象升序排列的阵列，根据natural ordering的元素。
+static void sort(Object[] a, int fromIndex, int toIndex)
+对指定对象升序排列的数组的指定范围内，根据natural ordering的元素。
+static void sort(short[] a)
+按照数字顺序排列指定的数组。
+static void sort(short[] a, int fromIndex, int toIndex)
+按升序排列数组的指定范围。
+static <T> void sort(T[] a, Comparator<? super T> c)
+根据指定的比较器引发的顺序对指定的对象数组进行排序。
+static <T> void sort(T[] a, int fromIndex, int toIndex, Comparator<? super T> c)
+根据指定的比较器引发的顺序对指定的对象数组的指定范围进行排序。
+static Spliterator.OfDouble spliterator(double[] array)
+返回Spliterator.OfDouble覆盖所有指定数组。
+static Spliterator.OfDouble spliterator(double[] array, int startInclusive, int endExclusive)
+返回Spliterator.OfDouble覆盖指定数组的指定范围内。
+static Spliterator.OfInt spliterator(int[] array)
+返回Spliterator.OfInt覆盖所有指定数组。
+static Spliterator.OfInt spliterator(int[] array, int startInclusive, int endExclusive)
+返回Spliterator.OfInt覆盖指定数组的指定范围内。
+static Spliterator.OfLong spliterator(long[] array)
+返回Spliterator.OfLong覆盖所有指定数组。
+static Spliterator.OfLong spliterator(long[] array, int startInclusive, int endExclusive)
+返回Spliterator.OfLong覆盖指定数组的指定范围内。
+static <T> Spliterator<T> spliterator(T[] array)
+返回Spliterator覆盖所有指定数组。
+static <T> Spliterator<T> spliterator(T[] array, int startInclusive, int endExclusive)
+返回Spliterator覆盖指定数组的指定范围内。
+static DoubleStream stream(double[] array)
+返回顺序DoubleStream与指定的数组作为源。
+static DoubleStream stream(double[] array, int startInclusive, int endExclusive)
+返回顺序DoubleStream与指定的数组作为源的指定范围。
+static IntStream stream(int[] array)
+返回顺序IntStream与指定的数组作为源。
+static IntStream stream(int[] array, int startInclusive, int endExclusive)
+返回顺序IntStream与指定的数组作为源的指定范围。
+static LongStream stream(long[] array)
+返回顺序LongStream与指定的数组作为源。
+static LongStream stream(long[] array, int startInclusive, int endExclusive)
+返回顺序LongStream与指定的数组作为源的指定范围。
+static <T> Stream<T> stream(T[] array)
+返回顺序Stream与指定的数组作为源。
+static <T> Stream<T> stream(T[] array, int startInclusive, int endExclusive)
+返回顺序Stream与指定的数组作为源的指定范围。
+static String toString(boolean[] a)
+返回指定数组的内容的字符串表示形式。
+static String toString(byte[] a)
+返回指定数组的内容的字符串表示形式。
+static String toString(char[] a)
+返回指定数组的内容的字符串表示形式。
+static String toString(double[] a)
+返回指定数组的内容的字符串表示形式。
+static String toString(float[] a)
+返回指定数组的内容的字符串表示形式。
+static String toString(int[] a)
+返回指定数组的内容的字符串表示形式。
+static String toString(long[] a)
+返回指定数组的内容的字符串表示形式。
+static String toString(Object[] a)
+返回指定数组的内容的字符串表示形式。
+static String toString(short[] a)
+返回指定数组的内容的字符串表示形式。

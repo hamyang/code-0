@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        第一种方式(内联样式：行内样式)  不用
+        在标签内部通过style属性来设置元素样式
+    -->
+    <p style="color: rgb(255, 127, 157);font-size: 60px;">锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</p>
+    <!--
+        第二种方式(内部样式表) 一般也不用
+                可以为多个标签设置样式，一处修改全部应用
+                只能对一个网页起作用，不能跨网页
+    -->
+    <style>
+        p {
+            color: aquamarine;
+            font-size: 100px;
+        }
+    </style>
+    <p>锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</p>
+    <!--
+        第三种方式(外部样式) 最佳
+            可以将CSS样式编写到一个外部CSS文件中，然后通过link标签引入外部的CSS文件中
+            可以在不同页面中进行服复用
+    -->
+</body>
+<link rel="stylesheet" href="style.css">
+<h1>锄禾日当午，汗滴禾下土。谁知盘中餐，粒粒皆辛苦。</h1>
+</body>
+
+</html>

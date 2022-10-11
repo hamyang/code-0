@@ -1,0 +1,13 @@
+
+
+
+
+
+                                                 集合
+
+                            Collection 单列                       Map 双列
+
+                    List 可重复          Set 不可重复               HashMap    ....
+
+         ArrayList      LinkedList ...      HashSet  TreeSet集合 ...
+底层是数组，查询快，增删慢  底层是链表，查询慢，增删快

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 
+        box-sizing用来设置盒子尺寸的计算方式
+            可选值：content-box 默认值宽度和高度用来设置内容区大小
+                    border-box 宽度和高度用来设置整个盒子的可见框的大小
+     -->
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+
+            padding: 1px;
+            border: 1px rebeccapurple solid;
+            box-sizing: content-box;
+            box-sizing: border-box;
+        }
+     </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

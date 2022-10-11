@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 
+            使用float 属性来设置元素的浮动，浮动后会从文档流中脱离
+                可选： none 默认值，元素不浮动
+                       left 元素向左浮动
+                       right 元素向右浮动
+                        
+            浮动特点
+                1.完全脱离文档流
+                2.不会向父元素的左侧或右侧移动
+                3.块元素不再独占一行
+        */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            float: left;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            float: left;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
